@@ -28,6 +28,7 @@ jobs:
           git config --local user.email "divopsor@gmail.com"
           git config --local user.name "divopsor"
           git switch main
+          git remote update
           git reset --hard origin/main
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
           yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
