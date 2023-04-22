@@ -33,6 +33,7 @@ jobs:
           git reset --hard origin/main
           git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
+          git branch
           git status
           git log
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
