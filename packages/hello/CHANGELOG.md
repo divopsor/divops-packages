@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.6 (2023-04-22)
+
+### Bug Fixes
+
+* **ci:** fix lerna publish ignore pattern ([#12](https://github.com/divopsor/divops-packages/issues/12)) ([713aa4e](https://github.com/divopsor/divops-packages/commit/713aa4efc7da96022772bd132aea16df9e5108cf))
+
 ## 0.1.5 (2023-04-22)
 
 **Note:** Version bump only for package @divops-packages/hello
