@@ -23,7 +23,7 @@
     }
   },
   "scripts": {
-    "prepack": "build",
+    "prepack": "yarn build",
     "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts && tsup ./src/bin/cli.ts --format cjs,esm --dts",
     "dev": "yarn run build --watch",
     "typecheck": "tsc --noEmit"
