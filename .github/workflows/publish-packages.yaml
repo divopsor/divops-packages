@@ -31,6 +31,7 @@ jobs:
           git switch main
           git remote update
           git reset --hard origin/main
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
 
           git status
           git log
