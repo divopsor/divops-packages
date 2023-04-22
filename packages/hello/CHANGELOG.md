@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.1.0 (2023-04-22)
+
+### Features
+
+* **ci:** publish workflows and fix of scaffolding ([#6](https://github.com/divopsor/divops-packages/issues/6)) ([77e9b56](https://github.com/divopsor/divops-packages/commit/77e9b56c9b13d58eb0d435413bc2bc3f7cf451f9))
+
 ## 0.0.4 (2023-04-22)
 
 **Note:** Version bump only for package @divops-packages/hello
