@@ -2,7 +2,7 @@ name: publish-packages
 on:
   push:
     branches:
-      - main
+      - not-branch
 
 jobs:
   publish:
