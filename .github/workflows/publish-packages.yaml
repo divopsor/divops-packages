@@ -38,6 +38,6 @@ jobs:
           git log
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
           yarn lerna changed --all
-          yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
+          yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags --ignore-scripts
           git status
           yarn lerna publish from-package --yes --concurrency=4
