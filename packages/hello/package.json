@@ -1,8 +1,5 @@
----
-to: packages/<%= name %>/package.json
----
 {
-  "name": "@divops-packages/<%= name %>",
+  "name": "@divops-packages/hello",
   "version": "0.0.1",
   "exports": {
     ".": "./src/index.ts",
