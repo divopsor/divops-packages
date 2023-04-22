@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.1.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/hello@1.0.3...@divops-packages/hello@1.1.0) (2023-04-22)
+
+
+### Features
+
+* **hello:** return string ([#15](https://github.com/divopsor/divops-packages/issues/15)) ([e76307e](https://github.com/divopsor/divops-packages/commit/e76307e7e6a36cd8ac91bdab72c63ee16ab5f9da))
+
+
+
+
+
 ## [1.0.3](https://github.com/divopsor/divops-packages/compare/@divops-packages/hello@0.1.0...@divops-packages/hello@1.0.3) (2023-04-22)
 
 
