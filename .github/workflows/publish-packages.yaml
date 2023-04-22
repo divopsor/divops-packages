@@ -16,13 +16,18 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: 16.x
+      - name: Yarn install
+        env:
+          YARN_NPM_AUTH_TOKEN: ${{ secrets.DIVOPS_PACKAGES_NPM_TOKEN }}
+        run: |
+          yarn install
+          yarn npm whoami
       - name: Lerna Publish Packages
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.DIVOPS_PACKAGES_NPM_TOKEN }}
         run: |
           git config --local user.email "divopsor@gmail.com"
           git config --local user.name "divopsor"
-          yarn install
-          yarn npm whoami
+          echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
           yarn lerna version --conventional-commits --yes --git-remote origin
           yarn lerna publish from-git --yes --concurrency=4
