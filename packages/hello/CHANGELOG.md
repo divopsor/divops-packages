@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.3 (2023-04-22)
+
+### Bug Fixes
+
+* **ci:** add ignorePattern of lerna and --include-merged-tags ([#9](https://github.com/divopsor/divops-packages/issues/9)) ([af30363](https://github.com/divopsor/divops-packages/commit/af3036382da0943c13ffd95b61e931602f878ba8))
+
 ## 0.1.2 (2023-04-22)
 
 ### Bug Fixes
