@@ -34,4 +34,5 @@ jobs:
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
           yarn lerna changed --all
           yarn lerna version --conventional-commits --yes --git-remote origin
-          yarn lerna publish from-package --yes --concurrency=4
+          yarn lerna publish from-git --yes --concurrency=4
+          git push origin HEAD || echo "push할 것이 없습니다."
