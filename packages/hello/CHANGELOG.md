@@ -3,6 +3,10 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.11 (2023-04-22)
+
+**Note:** Version bump only for package @divops-packages/hello
+
 ## 0.1.10 (2023-04-22)
 
 ### Bug Fixes
