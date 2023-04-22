@@ -5,6 +5,7 @@
 ## Purpose
 
 - This repo aims for making tools or libraries of frontend devops.
+- This repo uses lerna for managing package version.
 - We welcome contribution from everyone in the community.
 
 ## Author
