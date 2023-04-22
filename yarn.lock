@@ -295,6 +295,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna-lite/changed@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@lerna-lite/changed@npm:2.1.0"
+  dependencies:
+    "@lerna-lite/cli": 2.1.0
+    "@lerna-lite/core": 2.1.0
+    "@lerna-lite/list": 2.1.0
+    "@lerna-lite/listable": 2.1.0
+  checksum: 65cf0f5203bbbe3c1cc93875edba9e9d7d6e718041bdbffdd954d199aef2963654068f597362f7dfb5ed3870f7e8024ac248a39dc9fef65aad42955f86c00eb8
+  languageName: node
+  linkType: hard
+
 "@lerna-lite/cli@npm:2.1.0, @lerna-lite/cli@npm:^2.1.0":
   version: 2.1.0
   resolution: "@lerna-lite/cli@npm:2.1.0"
@@ -359,6 +371,17 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna-lite/filter-packages@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@lerna-lite/filter-packages@npm:2.1.0"
+  dependencies:
+    "@lerna-lite/core": 2.1.0
+    multimatch: ^6.0.0
+    npmlog: ^7.0.1
+  checksum: af14804b475dec218a8f902c26e5c0bcf145e7777412ebbff3e2e38d042dd26571ebb5f217a87854b19e7c5a9baa5026995b874227024715cdc8da01338bb50a
+  languageName: node
+  linkType: hard
+
 "@lerna-lite/init@npm:2.1.0":
   version: 2.1.0
   resolution: "@lerna-lite/init@npm:2.1.0"
@@ -368,6 +391,29 @@ __metadata:
     p-map: ^5.5.0
     write-json-file: ^5.0.0
   checksum: 92194e1c0473e8657401651e9f0e6524c0eb87fae11863ac8dbd8fa5d1365236854dc7a5b6ff97d681a407d507b6dc6c64bb037919091999a38b3bf497b41780
+  languageName: node
+  linkType: hard
+
+"@lerna-lite/list@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@lerna-lite/list@npm:2.1.0"
+  dependencies:
+    "@lerna-lite/cli": 2.1.0
+    "@lerna-lite/core": 2.1.0
+    "@lerna-lite/filter-packages": 2.1.0
+    "@lerna-lite/listable": 2.1.0
+  checksum: 5e91afb2da4d556f9c6bcb19c6b3d5edc66d178b79cff8638792a82abbe375ece0e3f50e32d40a94ffbb43b779d9a545096e436b1f9ff4a1f303acccb88e927c
+  languageName: node
+  linkType: hard
+
+"@lerna-lite/listable@npm:2.1.0":
+  version: 2.1.0
+  resolution: "@lerna-lite/listable@npm:2.1.0"
+  dependencies:
+    "@lerna-lite/core": 2.1.0
+    chalk: ^5.2.0
+    columnify: ^1.6.0
+  checksum: 4bcd42777a1f81ab099342ecc9c16df53ceefefed37fc4ee47fd6704a64fe289c37d9edc083a61a7a18b7a65abc67f9fe27272935a74689b61d894d28babb96e
   languageName: node
   linkType: hard
 
@@ -442,6 +488,18 @@ __metadata:
     uuid: ^9.0.0
     write-json-file: ^5.0.0
   checksum: 54429a2b89b532aae6fb3f217dcad22184d0df44a39fe6ad3168a823c353f042c0510eb3f46d8399458b0a43f27040d8a7121f3e9579a321622c7e6c3181996e
+  languageName: node
+  linkType: hard
+
+"@lerna-lite/watch@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@lerna-lite/watch@npm:2.1.0"
+  dependencies:
+    "@lerna-lite/cli": 2.1.0
+    "@lerna-lite/core": 2.1.0
+    "@lerna-lite/filter-packages": 2.1.0
+    chokidar: ^3.5.3
+  checksum: 515ff15f4aadf4c1f28a8a5c7509f58b4c6596c7092719f581721efd15a4b2a5291c3fc40e701778586e06083a849240148b51109fdd1991159bd861b74ab9f7
   languageName: node
   linkType: hard
 
@@ -861,6 +919,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@types/minimatch@npm:^3.0.5":
+  version: 3.0.5
+  resolution: "@types/minimatch@npm:3.0.5"
+  checksum: c41d136f67231c3131cf1d4ca0b06687f4a322918a3a5adddc87ce90ed9dbd175a3610adee36b106ae68c0b92c637c35e02b58c8a56c424f71d30993ea220b92
+  languageName: node
+  linkType: hard
+
 "@types/minimist@npm:^1.2.0":
   version: 1.2.2
   resolution: "@types/minimist@npm:1.2.2"
@@ -1235,6 +1300,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"array-differ@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "array-differ@npm:4.0.0"
+  checksum: 1de99a06bc3219f96b062a561a4c19af7a68bfaf2c1e0ccedd1d82ce1fbc7757f939e03cf0d3ad76b71f855a8ad2b2a16bf53df331bf5f0c90002774f04fb0b5
+  languageName: node
+  linkType: hard
+
 "array-ify@npm:^1.0.0":
   version: 1.0.0
   resolution: "array-ify@npm:1.0.0"
@@ -1246,6 +1318,13 @@ __metadata:
   version: 2.1.0
   resolution: "array-union@npm:2.1.0"
   checksum: 5bee12395cba82da674931df6d0fea23c4aa4660cb3b338ced9f828782a65caa232573e6bf3968f23e0c5eb301764a382cef2f128b170a9dc59de0e36c39f98d
+  languageName: node
+  linkType: hard
+
+"array-union@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "array-union@npm:3.0.1"
+  checksum: 47b29f88258e8f37ffb93ddaa327d4308edd950b52943c172b73558afdd3fa74cfd68816ba5aa4b894242cf281fa3c6d0362ae057e4a18bddbaedbe46ebe7112
   languageName: node
   linkType: hard
 
@@ -1493,7 +1572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.5.1":
+"chokidar@npm:^3.5.1, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -1992,9 +2071,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "divops-packages@workspace:."
   dependencies:
+    "@lerna-lite/changed": ^2.1.0
     "@lerna-lite/cli": ^2.1.0
     "@lerna-lite/publish": ^2.1.0
     "@lerna-lite/version": ^2.1.0
+    "@lerna-lite/watch": ^2.1.0
     "@typescript-eslint/eslint-plugin": ^5.49.0
     "@typescript-eslint/parser": ^5.49.0
     eslint: ^8.33.0
@@ -4012,6 +4093,18 @@ __metadata:
   version: 2.1.3
   resolution: "ms@npm:2.1.3"
   checksum: aa92de608021b242401676e35cfa5aa42dd70cbdc082b916da7fb925c542173e36bce97ea3e804923fe92c0ad991434e4a38327e15a1b5b5f945d66df615ae6d
+  languageName: node
+  linkType: hard
+
+"multimatch@npm:^6.0.0":
+  version: 6.0.0
+  resolution: "multimatch@npm:6.0.0"
+  dependencies:
+    "@types/minimatch": ^3.0.5
+    array-differ: ^4.0.0
+    array-union: ^3.0.1
+    minimatch: ^3.0.4
+  checksum: c04233765f664f556af12309cdad1a11c137655f756674b853a981f287984a49f3916955b57d306ed36bba3d2d6d5b6fbba4b48f483f11bd24e3c124a09e05b5
   languageName: node
   linkType: hard
 

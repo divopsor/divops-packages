@@ -16,8 +16,10 @@
     "typescript": "^4.9.5"
   },
   "dependencies": {
+    "@lerna-lite/changed": "^2.1.0",
     "@lerna-lite/cli": "^2.1.0",
     "@lerna-lite/publish": "^2.1.0",
-    "@lerna-lite/version": "^2.1.0"
+    "@lerna-lite/version": "^2.1.0",
+    "@lerna-lite/watch": "^2.1.0"
   }
 }
