@@ -9,7 +9,7 @@
 
 ## Author
 
-- [dp](https://github.com/divopsor)
+- dp [@divopsor](https://github.com/divopsor)
 
 ## License
 
