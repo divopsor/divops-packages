@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.19 (2023-04-22)
+
+### Bug Fixes
+
+* **ci:** problem of always publish packages ([9e5686f](https://github.com/divopsor/divops-packages/commit/9e5686f86c7dffea2a622f46ff4e6555f6a5ee13))
+
 ## 0.1.18 (2023-04-22)
 
 **Note:** Version bump only for package @divops-packages/hello
