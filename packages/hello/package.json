@@ -1,6 +1,6 @@
 {
   "name": "@divops-packages/hello",
-  "version": "0.1.24",
+  "version": "1.0.0",
   "exports": {
     ".": "./src/index.ts",
     "./package.json": "./package.json"
