@@ -30,5 +30,5 @@ jobs:
           git switch main
           git reset --hard origin/main
           echo //registry.npmjs.org/:_authToken=${YARN_NPM_AUTH_TOKEN} | tee .npmrc $HOME/.npmrc > /dev/null
-          yarn lerna version --conventional-commits --yes --git-remote origin
+          yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
           yarn lerna publish from-git --yes --concurrency=4
