@@ -22,5 +22,6 @@
     "**/*.yaml",
     "**/CHANGELOG.md",
     ".npmrc"
-  ]
+  ],
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json"
 }

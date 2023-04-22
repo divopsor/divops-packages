@@ -9,17 +9,15 @@
     "new": "./.scripts/scaffold.sh"
   },
   "devDependencies": {
+    "@lerna/child-process": "^6.6.1",
     "@typescript-eslint/eslint-plugin": "^5.49.0",
     "@typescript-eslint/parser": "^5.49.0",
     "eslint": "^8.33.0",
     "eslint-config-prettier": "^8.6.0",
+    "js-yaml": "^4.1.0",
+    "lerna": "^6.6.1",
+    "nx": "^15.9.2",
+    "rimraf": "^5.0.0",
     "typescript": "^4.9.5"
-  },
-  "dependencies": {
-    "@lerna-lite/changed": "^2.1.0",
-    "@lerna-lite/cli": "^2.1.0",
-    "@lerna-lite/publish": "^2.1.0",
-    "@lerna-lite/version": "^2.1.0",
-    "@lerna-lite/watch": "^2.1.0"
   }
 }
