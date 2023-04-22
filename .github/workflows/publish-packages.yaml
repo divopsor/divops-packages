@@ -40,4 +40,4 @@ jobs:
           yarn lerna changed --all
           yarn lerna version --conventional-commits --yes --git-remote origin --include-merged-tags
           git status
-          yarn lerna publish from-git --yes --concurrency=4
+          yarn lerna publish from-package --yes --concurrency=4
