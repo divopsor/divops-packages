@@ -491,6 +491,18 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@lerna-lite/watch@npm:^2.1.0":
+  version: 2.1.0
+  resolution: "@lerna-lite/watch@npm:2.1.0"
+  dependencies:
+    "@lerna-lite/cli": 2.1.0
+    "@lerna-lite/core": 2.1.0
+    "@lerna-lite/filter-packages": 2.1.0
+    chokidar: ^3.5.3
+  checksum: 515ff15f4aadf4c1f28a8a5c7509f58b4c6596c7092719f581721efd15a4b2a5291c3fc40e701778586e06083a849240148b51109fdd1991159bd861b74ab9f7
+  languageName: node
+  linkType: hard
+
 "@nodelib/fs.scandir@npm:2.1.5":
   version: 2.1.5
   resolution: "@nodelib/fs.scandir@npm:2.1.5"
@@ -1560,7 +1572,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chokidar@npm:^3.5.1":
+"chokidar@npm:^3.5.1, chokidar@npm:^3.5.3":
   version: 3.5.3
   resolution: "chokidar@npm:3.5.3"
   dependencies:
@@ -2063,6 +2075,7 @@ __metadata:
     "@lerna-lite/cli": ^2.1.0
     "@lerna-lite/publish": ^2.1.0
     "@lerna-lite/version": ^2.1.0
+    "@lerna-lite/watch": ^2.1.0
     "@typescript-eslint/eslint-plugin": ^5.49.0
     "@typescript-eslint/parser": ^5.49.0
     eslint: ^8.33.0

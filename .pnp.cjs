@@ -34,9 +34,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["@lerna-lite/changed", "npm:2.1.0"],\
-            ["@lerna-lite/cli", "virtual:02fef072ed81d755685c971fa4ed33e2e387814308327a1cdc13419d1aa99c915181faf336f21e3cf10414a9b922a6615d0369939175f3c6e73a2e1011637c36#npm:2.1.0"],\
+            ["@lerna-lite/cli", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:2.1.0"],\
             ["@lerna-lite/publish", "npm:2.1.0"],\
             ["@lerna-lite/version", "npm:2.1.0"],\
+            ["@lerna-lite/watch", "npm:2.1.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:5.51.0"],\
             ["@typescript-eslint/parser", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:5.51.0"],\
             ["eslint", "npm:8.33.0"],\
@@ -545,6 +546,88 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             "@types/lerna-lite__watch"\
           ],\
           "linkType": "HARD"\
+        }],\
+        ["virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:2.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/@lerna-lite-cli-virtual-a4e1471ba0/0/cache/@lerna-lite-cli-npm-2.1.0-fc8164f665-fcb60f03c5.zip/node_modules/@lerna-lite/cli/",\
+          "packageDependencies": [\
+            ["@lerna-lite/cli", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:2.1.0"],\
+            ["@lerna-lite/core", "npm:2.1.0"],\
+            ["@lerna-lite/exec", null],\
+            ["@lerna-lite/init", "npm:2.1.0"],\
+            ["@lerna-lite/list", null],\
+            ["@lerna-lite/publish", "npm:2.1.0"],\
+            ["@lerna-lite/run", null],\
+            ["@lerna-lite/version", "npm:2.1.0"],\
+            ["@lerna-lite/watch", "npm:2.1.0"],\
+            ["@types/lerna-lite__exec", null],\
+            ["@types/lerna-lite__list", null],\
+            ["@types/lerna-lite__publish", null],\
+            ["@types/lerna-lite__run", null],\
+            ["@types/lerna-lite__version", null],\
+            ["@types/lerna-lite__watch", null],\
+            ["dedent", "npm:0.7.0"],\
+            ["dotenv", "npm:16.0.3"],\
+            ["import-local", "npm:3.1.0"],\
+            ["load-json-file", "npm:7.0.1"],\
+            ["npmlog", "npm:7.0.1"],\
+            ["yargs", "npm:17.7.1"]\
+          ],\
+          "packagePeers": [\
+            "@lerna-lite/exec",\
+            "@lerna-lite/list",\
+            "@lerna-lite/publish",\
+            "@lerna-lite/run",\
+            "@lerna-lite/version",\
+            "@lerna-lite/watch",\
+            "@types/lerna-lite__exec",\
+            "@types/lerna-lite__list",\
+            "@types/lerna-lite__publish",\
+            "@types/lerna-lite__run",\
+            "@types/lerna-lite__version",\
+            "@types/lerna-lite__watch"\
+          ],\
+          "linkType": "HARD"\
+        }],\
+        ["virtual:d81eebcf7ec6737740abca7fb0320e7e0b35b1549b8a8cfad572c51e61efc5b880a83d3810210744434d7b7856ccabeb18974c79ae2d49de529669fb97537292#npm:2.1.0", {\
+          "packageLocation": "./.yarn/__virtual__/@lerna-lite-cli-virtual-0a39ce06a9/0/cache/@lerna-lite-cli-npm-2.1.0-fc8164f665-fcb60f03c5.zip/node_modules/@lerna-lite/cli/",\
+          "packageDependencies": [\
+            ["@lerna-lite/cli", "virtual:d81eebcf7ec6737740abca7fb0320e7e0b35b1549b8a8cfad572c51e61efc5b880a83d3810210744434d7b7856ccabeb18974c79ae2d49de529669fb97537292#npm:2.1.0"],\
+            ["@lerna-lite/core", "npm:2.1.0"],\
+            ["@lerna-lite/exec", null],\
+            ["@lerna-lite/init", "npm:2.1.0"],\
+            ["@lerna-lite/list", null],\
+            ["@lerna-lite/publish", null],\
+            ["@lerna-lite/run", null],\
+            ["@lerna-lite/version", null],\
+            ["@lerna-lite/watch", "npm:2.1.0"],\
+            ["@types/lerna-lite__exec", null],\
+            ["@types/lerna-lite__list", null],\
+            ["@types/lerna-lite__publish", null],\
+            ["@types/lerna-lite__run", null],\
+            ["@types/lerna-lite__version", null],\
+            ["@types/lerna-lite__watch", null],\
+            ["dedent", "npm:0.7.0"],\
+            ["dotenv", "npm:16.0.3"],\
+            ["import-local", "npm:3.1.0"],\
+            ["load-json-file", "npm:7.0.1"],\
+            ["npmlog", "npm:7.0.1"],\
+            ["yargs", "npm:17.7.1"]\
+          ],\
+          "packagePeers": [\
+            "@lerna-lite/exec",\
+            "@lerna-lite/list",\
+            "@lerna-lite/publish",\
+            "@lerna-lite/run",\
+            "@lerna-lite/version",\
+            "@lerna-lite/watch",\
+            "@types/lerna-lite__exec",\
+            "@types/lerna-lite__list",\
+            "@types/lerna-lite__publish",\
+            "@types/lerna-lite__run",\
+            "@types/lerna-lite__version",\
+            "@types/lerna-lite__watch"\
+          ],\
+          "linkType": "HARD"\
         }]\
       ]],\
       ["@lerna-lite/core", [\
@@ -703,6 +786,19 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["temp-dir", "npm:3.0.0"],\
             ["uuid", "npm:9.0.0"],\
             ["write-json-file", "npm:5.0.0"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["@lerna-lite/watch", [\
+        ["npm:2.1.0", {\
+          "packageLocation": "./.yarn/cache/@lerna-lite-watch-npm-2.1.0-d81eebcf7e-515ff15f4a.zip/node_modules/@lerna-lite/watch/",\
+          "packageDependencies": [\
+            ["@lerna-lite/watch", "npm:2.1.0"],\
+            ["@lerna-lite/cli", "virtual:d81eebcf7ec6737740abca7fb0320e7e0b35b1549b8a8cfad572c51e61efc5b880a83d3810210744434d7b7856ccabeb18974c79ae2d49de529669fb97537292#npm:2.1.0"],\
+            ["@lerna-lite/core", "npm:2.1.0"],\
+            ["@lerna-lite/filter-packages", "npm:2.1.0"],\
+            ["chokidar", "npm:3.5.3"]\
           ],\
           "linkType": "HARD"\
         }]\
@@ -2609,9 +2705,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["divops-packages", "workspace:."],\
             ["@lerna-lite/changed", "npm:2.1.0"],\
-            ["@lerna-lite/cli", "virtual:02fef072ed81d755685c971fa4ed33e2e387814308327a1cdc13419d1aa99c915181faf336f21e3cf10414a9b922a6615d0369939175f3c6e73a2e1011637c36#npm:2.1.0"],\
+            ["@lerna-lite/cli", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:2.1.0"],\
             ["@lerna-lite/publish", "npm:2.1.0"],\
             ["@lerna-lite/version", "npm:2.1.0"],\
+            ["@lerna-lite/watch", "npm:2.1.0"],\
             ["@typescript-eslint/eslint-plugin", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:5.51.0"],\
             ["@typescript-eslint/parser", "virtual:7cf4203cc2cd6de018049f49081be8bca3f2d2ac53ebc4d030350c5c17d0a75a5a0d749b0f4897ee013e5edcb8e0f80792ab3d80def8103f5f6cfeb5d34a652b#npm:5.51.0"],\
             ["eslint", "npm:8.33.0"],\
