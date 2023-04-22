@@ -3,6 +3,12 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.4 (2023-04-22)
+
+### Bug Fixes
+
+* **ci:** fix always publishing packages without changes ([#10](https://github.com/divopsor/divops-packages/issues/10)) ([459be71](https://github.com/divopsor/divops-packages/commit/459be71708691c29127e38dd90703f01b411816f))
+
 ## 0.1.3 (2023-04-22)
 
 ### Bug Fixes
