@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.0.3](https://github.com/divopsor/divops-packages/compare/@divops-packages/hello@0.1.0...@divops-packages/hello@1.0.3) (2023-04-22)
+
+
+### Bug Fixes
+
+* lerna-lite to lerna v6 and fix depth 1 tags ([b6d89c7](https://github.com/divopsor/divops-packages/commit/b6d89c77d3421a893d9a8ec9ed3c4abce9908267))
+
+
+
+
+
 ## 1.0.2 (2023-04-22)
 
 **Note:** Version bump only for package @divops-packages/hello
