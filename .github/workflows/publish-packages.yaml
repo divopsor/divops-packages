@@ -20,6 +20,8 @@ jobs:
         env:
           YARN_NPM_AUTH_TOKEN: ${{ secrets.DIVOPS_PACKAGES_NPM_TOKEN }}
         run: |
+          git config --local user.email "divopsor@gmail.com"
+          git config --local user.name "divopsor"
           yarn install
           yarn lerna version --conventional-commits --yes --git-remote origin
           yarn lerna publish from-git --yes --concurrency=4
