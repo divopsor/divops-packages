@@ -5,7 +5,11 @@ module.exports = {
   parserOptions: {
     allowAutomaticSingleRunInference: true,
     tsconfigRootDir: __dirname,
-    project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+    project: [
+      './tsconfig.eslint.json',
+      './packages/*/tsconfig.json',
+      './packages/*/*/tsconfig.json',
+    ],
   },
   plugins: ['@typescript-eslint'],
   extends: [
