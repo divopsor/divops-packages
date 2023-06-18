@@ -1,8 +1,5 @@
----
-to: packages/<%= name %>/package.json
----
 {
-  "name": "@divops-packages/<%= name %>",
+  "name": "@divops-packages/gist-crud-core",
   "version": "0.0.0",
   "exports": {
     ".": "./src/index.ts",
