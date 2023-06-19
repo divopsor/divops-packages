@@ -28,7 +28,7 @@ to: packages/<%= name %>/package.json
     "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
-    "tsup": "^6.5.0",
+    "tsup": "^7.0.0",
     "typescript": "^4.9.5"
   }
 }

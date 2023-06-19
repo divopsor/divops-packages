@@ -9,3 +9,5 @@ __snapshots__
 build
 .pnp.cjs
 bin
+**/.yarn
+.pnp.*
