@@ -2683,6 +2683,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@babel/preset-typescript", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:7.22.5"],\
             ["@octokit/rest", "npm:18.12.0"],\
             ["@types/jest", "npm:28.1.8"],\
+            ["@types/node", "npm:20.3.1"],\
             ["babel-jest", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:28.1.3"],\
             ["eslint", "npm:8.43.0"],\
             ["jest", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:28.1.3"],\
