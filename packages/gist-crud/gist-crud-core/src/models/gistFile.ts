@@ -1,4 +1,4 @@
 export interface GistFile {
   filename: string;
-  contents: string;
+  content: string;
 }
