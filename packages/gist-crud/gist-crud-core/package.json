@@ -1,6 +1,6 @@
 {
   "name": "@divops-packages/gist-crud-core",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "exports": {
     ".": "./src/index.ts",
     "./package.json": "./package.json"

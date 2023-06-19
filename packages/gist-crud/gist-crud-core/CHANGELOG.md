@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/gist-crud-core@0.1.2...@divops-packages/gist-crud-core@0.2.0) (2023-06-19)
+
+
+### Features
+
+* **gist-crud:** 기능 추가 및 테스트 추가 ([#21](https://github.com/divopsor/divops-packages/issues/21)) ([f635015](https://github.com/divopsor/divops-packages/commit/f63501551959af8377e5d21a411fb8a30f795528))
+
+
+
+
+
 ## [0.1.2](https://github.com/divopsor/divops-packages/compare/@divops-packages/gist-crud-core@0.1.1...@divops-packages/gist-crud-core@0.1.2) (2023-06-19)
 
 **Note:** Version bump only for package @divops-packages/gist-crud-core
