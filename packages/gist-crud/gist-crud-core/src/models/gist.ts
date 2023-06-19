@@ -1,7 +1,7 @@
-import { GistFile } from './gistFile';
+import { GistNode } from './gistNode';
 
 export interface Gist {
   id: string;
   description: string;
-  gistFiles: GistFile[];
+  gistNodes: GistNode[];
 }

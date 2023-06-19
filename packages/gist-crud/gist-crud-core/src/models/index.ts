@@ -1,2 +1,2 @@
 export * from './gist';
-export * from './gistFile';
+export * from './gistNode';

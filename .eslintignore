@@ -11,3 +11,5 @@ build
 bin
 **/.yarn
 .pnp.*
+.eslintrc.cjs
+babel.config.js
