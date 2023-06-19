@@ -13,11 +13,7 @@ export async function createItem({ id, gistNode }: CreateItemOptions, context: C
   try {
     await octokit.rest.gists.update({
       gist_id: id,
-      files: serializeGistNodes([gistNode]) as {
-        [key: string]: Partial<{
-          [key: string]: unknown;
-        }>;
-      },
+      files: serializeGistNodes([gistNode]),
       public: false,
     });
 
