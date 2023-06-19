@@ -6,6 +6,7 @@ import { deleteList } from './deleteList';
 import { readItem } from './readItem';
 import { updateItem } from './updateItem';
 
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const token = process.env.TEST_GIST_TOKEN!;
 
 describe('createItem은', () => {
@@ -55,7 +56,7 @@ describe('createItem은', () => {
     let error = null;
     try {
       await readItem({ id, filename }, context);
-    } catch (e: any) {
+    } catch (e) {
       error = e;
     }
 

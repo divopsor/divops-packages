@@ -10,5 +10,5 @@ export async function deleteList({ id }: DeleteListOptions, context: Context): P
 
   await octokit.rest.gists.delete({
     gist_id: id,
-  })
+  });
 }

@@ -17,5 +17,5 @@ export async function readList({ id }: ReadListOptions, context: Context): Promi
     id: data.id ?? id,
     description: data.description ?? '',
     gistFiles: parseRawGistFiles(data.files),
-  }
+  };
 }

@@ -7,7 +7,7 @@ export interface CreateContextOptions {
 
 export interface Context {
   baseUrl: string;
-  octokit: Octokit
+  octokit: Octokit;
 }
 
 export function createContext({ token, baseUrl }: CreateContextOptions): Context {

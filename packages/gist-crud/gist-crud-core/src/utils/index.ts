@@ -1,1 +1,1 @@
-export * from "./parseRawGistFiles";
+export * from './parseRawGistFiles';

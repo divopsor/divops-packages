@@ -13,8 +13,8 @@ export async function createList({ description }: CreateListOptions, context: Co
   const { data } = await octokit.rest.gists.create({
     files: {
       [GIST_META_FILE]: {
-        content: JSON.stringify({ description }, null, 2)
-      }
+        content: JSON.stringify({ description }, null, 2),
+      },
     },
     description,
     public: false,
@@ -27,6 +27,6 @@ export async function createList({ description }: CreateListOptions, context: Co
   return {
     id: data.id,
     description: data.description ?? '',
-    gistFiles: parseRawGistFiles(data.files)
-  }
+    gistFiles: parseRawGistFiles(data.files),
+  };
 }

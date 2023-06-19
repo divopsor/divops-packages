@@ -12,3 +12,5 @@ bin
 **/.yarn
 .pnp.*
 .eslintrc.cjs
+*.md
+babel.config.js

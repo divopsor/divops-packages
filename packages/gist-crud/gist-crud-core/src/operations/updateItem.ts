@@ -15,14 +15,24 @@ export async function updateItem({ id, filename, params }: UpdateItemOptions, co
     files: {
       [filename]: {
         filename: params.filename,
-        content: params.content
-      }
+        content: params.content,
+      },
     },
     public: false,
   });
 
-  return {
-    filename: data.files?.[params.filename]!.filename!,
-    content: data.files?.[params.filename]!.content!
+  if (data.files == null) {
+    throw new Error(`존재하지 않습니다.`);
   }
+
+  const node = data.files[params.filename];
+
+  if (node == null || node.filename == null || node.content == null) {
+    throw new Error(`존재하지 않습니다.`);
+  }
+
+  return {
+    filename: node.filename,
+    content: node.content,
+  };
 }

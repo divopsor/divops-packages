@@ -16,7 +16,7 @@ export async function readItem({ id, filename }: ReadItemOptions, context: Conte
   const file = data.files?.[filename];
 
   if (file == null || file.filename == null || file.content == null) {
-    throw new Error(`${id}에 ${filename}이 없거나 내용이 존재하지 않습니다.`)
+    throw new Error(`${id}에 ${filename}이 없거나 내용이 존재하지 않습니다.`);
   }
 
   return {

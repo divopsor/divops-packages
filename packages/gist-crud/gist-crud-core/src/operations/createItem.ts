@@ -1,7 +1,6 @@
 import { Context } from '../context';
 import { Gist, GistFile } from '../models';
 
-
 interface CreateItemOptions {
   id: Gist['id'];
   gistFile: GistFile;
@@ -19,7 +18,8 @@ export async function createItem({ id, gistFile }: CreateItemOptions, context: C
 
     return id;
   } catch (error: any) {
-    console.error(error.message)
+    console.error(error.message);
+
     throw error;
   }
 }

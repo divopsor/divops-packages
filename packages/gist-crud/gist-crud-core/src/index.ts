@@ -1,18 +1,9 @@
 import { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem } from './operations';
-import { CreateContextOptions, createContext } from "./context"
+import { CreateContextOptions, createContext } from './context';
 
 export * from './models';
 
-export {
-  createItem,
-  createList,
-  deleteItem,
-  deleteList,
-  readItem,
-  readList,
-  updateItem,
-  createContext,
-}
+export { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem, createContext };
 
 export const createGistCRUD = (options: CreateContextOptions) => {
   const context = createContext(options);
@@ -25,5 +16,5 @@ export const createGistCRUD = (options: CreateContextOptions) => {
     readItem: (options: Parameters<typeof readItem>[0]) => readItem(options, context),
     readList: (options: Parameters<typeof readList>[0]) => readList(options, context),
     updateItem: (options: Parameters<typeof updateItem>[0]) => updateItem(options, context),
-  }
-}
+  };
+};
