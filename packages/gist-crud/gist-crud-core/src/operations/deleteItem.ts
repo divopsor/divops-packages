@@ -1,17 +1,17 @@
 import { Context } from '../context';
-import { Gist, GistFile } from '../models';
+import { Gist, GistNode } from '../models';
 
 interface DeleteItemOptions {
   id: Gist['id'];
-  filename: GistFile['filename'];
+  nodeId: GistNode['id'];
 }
 
-export async function deleteItem({ id, filename }: DeleteItemOptions, context: Context): Promise<void> {
+export async function deleteItem({ id, nodeId }: DeleteItemOptions, context: Context): Promise<void> {
   const { octokit } = context;
 
   await octokit.rest.gists.update({
     gist_id: id,
-    files: { [filename]: {} },
+    files: { [nodeId]: {} },
     public: false,
   });
 }

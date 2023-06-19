@@ -1,6 +1,7 @@
 import { Context } from '../context';
 import { Gist } from '../models';
 import { parseRawGistFiles } from '../utils';
+import { GistFiles } from '../utils/types';
 
 interface ReadListOptions {
   id: Gist['id'];
@@ -16,6 +17,6 @@ export async function readList({ id }: ReadListOptions, context: Context): Promi
   return {
     id: data.id ?? id,
     description: data.description ?? '',
-    gistFiles: parseRawGistFiles(data.files),
+    gistNodes: parseRawGistFiles(data.files as GistFiles),
   };
 }

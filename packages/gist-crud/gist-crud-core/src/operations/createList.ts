@@ -1,7 +1,7 @@
 import { Gist } from '../models';
 import { Context } from '../context';
 import { GIST_META_FILE } from '../constants';
-import { parseRawGistFiles } from '../utils';
+import { GistFiles, parseRawGistFiles } from '../utils';
 
 interface CreateListOptions {
   description: string;
@@ -27,6 +27,6 @@ export async function createList({ description }: CreateListOptions, context: Co
   return {
     id: data.id,
     description: data.description ?? '',
-    gistFiles: parseRawGistFiles(data.files),
+    gistNodes: parseRawGistFiles(data.files as GistFiles),
   };
 }

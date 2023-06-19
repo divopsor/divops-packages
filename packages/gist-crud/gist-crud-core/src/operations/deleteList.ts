@@ -8,7 +8,5 @@ interface DeleteListOptions {
 export async function deleteList({ id }: DeleteListOptions, context: Context): Promise<void> {
   const { octokit } = context;
 
-  await octokit.rest.gists.delete({
-    gist_id: id,
-  });
+  await octokit.rest.gists.delete({ gist_id: id });
 }

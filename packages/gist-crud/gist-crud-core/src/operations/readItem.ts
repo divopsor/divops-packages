@@ -1,26 +1,27 @@
 import { Context } from '../context';
-import { Gist, GistFile } from '../models';
+import { Gist, GistNode } from '../models';
+import { parseRawGistFiles } from '../utils/parseRawGistFiles';
+import { GistFiles } from '../utils/types';
 
 interface ReadItemOptions {
   id: Gist['id'];
-  filename: GistFile['filename'];
+  nodeId: GistNode['id'];
 }
 
-export async function readItem({ id, filename }: ReadItemOptions, context: Context): Promise<GistFile> {
+export async function readItem({ id, nodeId }: ReadItemOptions, context: Context): Promise<GistNode> {
   const { octokit } = context;
 
   const { data } = await octokit.rest.gists.get({
     gist_id: id,
   });
 
-  const file = data.files?.[filename];
+  const gistNodes = parseRawGistFiles(data.files as GistFiles);
 
-  if (file == null || file.filename == null || file.content == null) {
-    throw new Error(`${id}에 ${filename}이 없거나 내용이 존재하지 않습니다.`);
+  const node = gistNodes.find(x => x.id === nodeId);
+
+  if (node == null) {
+    throw new Error(`${id}의 ${nodeId}를 찾을 수 없습니다.`);
   }
 
-  return {
-    filename: file.filename,
-    content: file.content,
-  };
+  return node;
 }

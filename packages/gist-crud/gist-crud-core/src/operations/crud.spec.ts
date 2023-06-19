@@ -6,6 +6,8 @@ import { deleteList } from './deleteList';
 import { readItem } from './readItem';
 import { updateItem } from './updateItem';
 
+jest.setTimeout(10_000);
+
 // eslint-disable-next-line @typescript-eslint/no-non-null-assertion
 const token = process.env.TEST_GIST_TOKEN!;
 
@@ -25,42 +27,46 @@ describe('createItem은', () => {
     const { id } = await createList({ description: '테스트 gist 입니다. 보이면 지워주세요.' }, context);
     expect(id).not.toBe(null);
 
-    const filename = 'test';
-    const content = 'test';
-    const changed = 'changed';
+    const nodeId = 'test';
+    const body = { test: 'true' };
+    const changed = { changed: 'true' };
 
-    await createItem({ id, gistFile: { content, filename } }, context);
+    await createItem({ id, gistNode: { id: nodeId, body } }, context);
 
-    const item = await readItem({ id, filename }, context);
+    const item = await readItem({ id, nodeId }, context);
 
     expect(item).toMatchInlineSnapshot(`
-      {
-        "content": "test",
-        "filename": "test",
+      Object {
+        "body": Object {
+          "test": "true",
+        },
+        "id": "test",
       }
     `);
 
-    await updateItem({ id, filename, params: { content: changed, filename } }, context);
+    await updateItem({ id, nodeId, params: { id: nodeId, body: changed } }, context);
 
-    const updated = await readItem({ id, filename }, context);
+    const updated = await readItem({ id, nodeId }, context);
 
     expect(updated).toMatchInlineSnapshot(`
-      {
-        "content": "changed",
-        "filename": "test",
+      Object {
+        "body": Object {
+          "changed": "true",
+        },
+        "id": "test",
       }
     `);
 
-    await deleteItem({ id, filename }, context);
+    await deleteItem({ id, nodeId }, context);
 
     let error = null;
     try {
-      await readItem({ id, filename }, context);
+      await readItem({ id, nodeId }, context);
     } catch (e) {
       error = e;
     }
 
-    expect(error).toMatchInlineSnapshot(`[Error: `);
+    expect(error).toMatchInlineSnapshot(`[Error: ${id}의 test를 찾을 수 없습니다.]`);
 
     await deleteList({ id }, context);
   });
