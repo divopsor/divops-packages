@@ -27,7 +27,7 @@ module.exports = {
     '@typescript-eslint/no-unsafe-member-access': 'off',
     '@typescript-eslint/require-await': 'off',
 
-    "@typescript-eslint/strict-boolean-expressions": 3,
+    "@typescript-eslint/strict-boolean-expressions": 'off',
 
     'no-restricted-imports': [
       'error',
