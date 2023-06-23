@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.2](https://github.com/divopsor/divops-packages/compare/init-berry@0.1.1...init-berry@0.1.2) (2023-06-23)
+
+
+### Bug Fixes
+
+* **init-berry:** bin dist ([2da1e88](https://github.com/divopsor/divops-packages/commit/2da1e8817502cb9f11a103e9103f6ff0940036ea))
+
+
+
+
+
 ## [0.1.1](https://github.com/divopsor/divops-packages/compare/init-berry@0.1.0...init-berry@0.1.1) (2023-06-23)
 
 
