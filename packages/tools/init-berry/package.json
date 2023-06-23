@@ -10,7 +10,7 @@
     "access": "public",
     "main": "./dist/index.js",
     "bin": {
-      "init-berry": "./bin/index.js"
+      "init-berry": "./dist/index.js"
     },
     "exports": {
       "./package.json": "./package.json"
