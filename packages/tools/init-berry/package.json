@@ -1,16 +1,14 @@
 {
   "name": "init-berry",
   "version": "0.1.2",
-  "main": "./src/index.ts",
-  "bin": "./bin/internal.js",
+  "bin": "node ./bin/internal.js",
   "exports": {
     "./package.json": "./package.json"
   },
   "publishConfig": {
     "access": "public",
-    "main": "./dist/index.js",
     "bin": {
-      "init-berry": "./dist/index.js"
+      "init-berry": "node ./dist/index.js"
     },
     "exports": {
       "./package.json": "./package.json"
