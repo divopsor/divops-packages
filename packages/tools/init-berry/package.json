@@ -2,7 +2,9 @@
   "name": "init-berry",
   "version": "0.1.0",
   "main": "./src/index.ts",
-  "bin": "./bin/internal.js",
+  "bin": {
+    "init-berry": "./bin/internal.js"
+  },
   "exports": {
     "./package.json": "./package.json"
   },
@@ -18,7 +20,7 @@
   },
   "scripts": {
     "prepack": "yarn build",
-    "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
+    "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts --onSuccess \"node ../../../scripts/postBuild.js\"",
     "dev": "yarn run build --watch",
     "typecheck": "tsc --noEmit"
   },
@@ -44,5 +46,6 @@
     "clipanion": "^3.2.1",
     "execa": "^5",
     "fs-extra": "^11.1.1"
-  }
+  },
+  "access": "public"
 }
