@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.7](https://github.com/divopsor/divops-packages/compare/init-berry@0.1.6...init-berry@0.1.7) (2023-06-24)
+
+
+### Bug Fixes
+
+* **init-berry:** hashbang 추가 ([#28](https://github.com/divopsor/divops-packages/issues/28)) ([ba80f42](https://github.com/divopsor/divops-packages/commit/ba80f428882555dd32dea3547e60c9acf4633285))
+
+
+
+
+
 ## [0.1.6](https://github.com/divopsor/divops-packages/compare/init-berry@0.1.5...init-berry@0.1.6) (2023-06-24)
 
 **Note:** Version bump only for package init-berry
