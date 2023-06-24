@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 import { Cli } from 'clipanion';
 import { MainCommand } from './commands/MainCommand';
 
