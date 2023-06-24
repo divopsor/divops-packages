@@ -6544,7 +6544,7 @@ __metadata:
     tsup: ^7.0.0
     typescript: ^4.9.5
   bin:
-    init-berry: node ./bin/internal.js
+    init-berry: ./bin/internal.js
   languageName: unknown
   linkType: soft
 

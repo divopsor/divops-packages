@@ -19,13 +19,17 @@ export class MainCommand extends Command {
 
     await execa(`yarn`, ['init', '-y'], { cwd: basePath });
 
+    console.log(`✅ yarn init -y`);
+
     await writeFile(path.join(basePath, '.gitignore'), GIT_IGNORE,'utf-8');
 
     await execa(`yarn`, ['set', 'version', 'stable'], { cwd: basePath });
 
+    console.log(`✅ yarn set version stable`);
+
     const contents = await readFile(path.join(basePath, '.yarnrc.yml'), 'utf-8');
 
-    if(!contents.includes('nodeLinker')) {
+    if (!contents.includes('nodeLinker')) {
       await writeFile(
         path.join(basePath, '.yarnrc.yml'),
         [
@@ -35,11 +39,19 @@ export class MainCommand extends Command {
         ].join('\n'),
         'utf-8'
       );
+
+      console.log(`✅ "nodeLinker: pnp" added.`);
     }
 
     await execa(`yarn`, ['set', 'version', 'stable'], { cwd: basePath });
 
+    await execa(`yarn`, [], { cwd: basePath });
+
+    console.log(`✅ yarn install`);
+
     await execa(`yarn`, ['dlx', '@yarnpkg/sdks', 'vscode'], { cwd: basePath });
+
+    console.log(`✅ yarn dlx @yarnpkg/sdks vscode`);
   }
 }
 
