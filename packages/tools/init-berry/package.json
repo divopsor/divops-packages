@@ -7,9 +7,7 @@
   },
   "publishConfig": {
     "access": "public",
-    "bin": {
-      "init-berry": "node ./dist/index.js"
-    },
+    "bin": "node ./dist/index.js",
     "exports": {
       "./package.json": "./package.json"
     }
