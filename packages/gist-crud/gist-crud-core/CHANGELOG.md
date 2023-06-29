@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.1 (2023-06-29)
+
+
+### Bug Fixes
+
+* **gist-crud:** add existsList ([#29](https://github.com/divopsor/divops-packages/issues/29)) ([32510d9](https://github.com/divopsor/divops-packages/commit/32510d98a35fac55e291a0ff9666ac38a0633305))
+
+
+
+
+
 # [0.2.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/gist-crud-core@0.1.2...@divops-packages/gist-crud-core@0.2.0) (2023-06-19)
 
 
