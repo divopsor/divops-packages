@@ -1,6 +1,6 @@
-import { Gist } from '../models';
-import { Context } from '../context';
 import { GIST_META_FILE } from '../constants';
+import { Context } from '../context';
+import { Gist } from '../models';
 import { GistFiles, parseRawGistFiles } from '../utils';
 
 interface CreateListOptions {
