@@ -5,4 +5,4 @@ export type GistFiles = {
 };
 export type JsonConvertible = {
   [P in keyof any]: P extends string | number | boolean | undefined ? P : JsonConvertible;
-};
+} | JsonConvertible[];

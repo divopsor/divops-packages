@@ -10,13 +10,17 @@ interface ReadListOptions {
 export async function readList({ id }: ReadListOptions, context: Context): Promise<Gist> {
   const { octokit } = context;
 
-  const { data } = await octokit.rest.gists.get({
-    gist_id: id,
-  });
+  try {
+    const { data } = await octokit.rest.gists.get({
+      gist_id: id,
+    });
 
-  return {
-    id: data.id ?? id,
-    description: data.description ?? '',
-    gistNodes: parseRawGistFiles(data.files as GistFiles),
-  };
+    return {
+      id: data.id ?? id,
+      description: data.description ?? '',
+      gistNodes: parseRawGistFiles(data.files as GistFiles),
+    };
+  } catch(error: any) {
+    throw new Error(`리스트를 구할 수 없습니다. (id: ${id}, message: ${error.message})`);
+  }
 }
