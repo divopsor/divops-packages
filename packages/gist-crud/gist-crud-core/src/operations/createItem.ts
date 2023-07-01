@@ -2,7 +2,7 @@ import { Context } from '../context';
 import { Gist, GistNode } from '../models';
 import { serializeGistNodes } from '../utils/serializeGistNode';
 
-interface CreateItemOptions {
+export interface CreateItemOptions {
   id: Gist['id'];
   gistNode: GistNode;
 }

@@ -1,7 +1,7 @@
 import { Context } from '../context';
 import { Gist } from '../models';
 
-interface ExistsListOptions {
+export interface ExistsListOptions {
   id: Gist['id'];
 }
 

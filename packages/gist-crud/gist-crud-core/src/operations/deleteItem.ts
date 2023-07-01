@@ -1,7 +1,7 @@
 import { Context } from '../context';
 import { Gist, GistNode } from '../models';
 
-interface DeleteItemOptions {
+export interface DeleteItemOptions {
   id: Gist['id'];
   nodeId: GistNode['id'];
 }

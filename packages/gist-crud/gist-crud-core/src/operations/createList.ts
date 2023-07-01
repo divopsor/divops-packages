@@ -3,7 +3,7 @@ import { Context } from '../context';
 import { Gist } from '../models';
 import { GistFiles, parseRawGistFiles } from '../utils';
 
-interface CreateListOptions {
+export interface CreateListOptions {
   description: string;
 }
 
