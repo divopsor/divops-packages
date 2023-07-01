@@ -3,7 +3,7 @@ import execa from 'execa';
 import fs from 'fs';
 import { readFile, writeFile } from 'fs-extra';
 import path from 'path';
-import { GIT_IGNORE_DEFAULT, GIT_IGNORE_ZERO_INSTALL } from '../constants';
+import { GIT_IGNORE_DEFAULT, GIT_IGNORE_ZERO_INSTALL, YARNRC_SUPPORTED_ARCHITECTURES } from '../constants';
 
 const GIT_IGNORE = [GIT_IGNORE_DEFAULT, GIT_IGNORE_ZERO_INSTALL].join('\n');
 
@@ -33,9 +33,9 @@ export class MainCommand extends Command {
       await writeFile(
         path.join(basePath, '.yarnrc.yml'),
         [
-          contents,
-          '',
           'nodeLinker: pnp',
+          YARNRC_SUPPORTED_ARCHITECTURES,
+          contents,
         ].join('\n'),
         'utf-8'
       );

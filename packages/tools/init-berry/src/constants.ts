@@ -133,3 +133,16 @@ export const GIT_IGNORE_ZERO_INSTALL = `
 !.yarn/sdks
 !.yarn/versions
 `;
+
+export const YARNRC_SUPPORTED_ARCHITECTURES = `
+supportedArchitectures:
+  cpu:
+    - x64
+    - arm64
+  libc:
+    - glibc
+    - musl
+  os:
+    - darwin
+    - linux
+`;
