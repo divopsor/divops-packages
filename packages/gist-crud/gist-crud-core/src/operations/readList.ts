@@ -3,7 +3,7 @@ import { Gist } from '../models';
 import { parseRawGistFiles } from '../utils';
 import { GistFiles } from '../utils/types';
 
-interface ReadListOptions {
+export interface ReadListOptions {
   id: Gist['id'];
 }
 

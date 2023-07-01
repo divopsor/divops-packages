@@ -3,7 +3,7 @@ import { Gist, GistNode } from '../models';
 import { parseRawGistFiles } from '../utils/parseRawGistFiles';
 import { GistFiles } from '../utils/types';
 
-interface ReadItemOptions {
+export interface ReadItemOptions {
   id: Gist['id'];
   nodeId: GistNode['id'];
 }

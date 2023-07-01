@@ -4,7 +4,7 @@ import { parseRawGistFiles } from '../utils/parseRawGistFiles';
 import { serializeGistNodes } from '../utils/serializeGistNode';
 import { GistFiles } from '../utils/types';
 
-interface UpdateItemOptions {
+export interface UpdateItemOptions {
   id: Gist['id'];
   nodeId: GistNode['id'];
   params: GistNode;

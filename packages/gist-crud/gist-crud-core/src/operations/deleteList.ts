@@ -1,7 +1,7 @@
 import { Context } from '../context';
 import { Gist } from '../models';
 
-interface DeleteListOptions {
+export interface DeleteListOptions {
   id: Gist['id'];
 }
 
