@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 0.2.0 (2023-07-01)
+
+
+### Features
+
+* **init-berry:** arm64 / x64 대응 추가 ([#31](https://github.com/divopsor/divops-packages/issues/31)) ([37be8be](https://github.com/divopsor/divops-packages/commit/37be8be687fdade5d78ad4952ee5ebc92d1a76d8))
+
+
+
+
+
 ## [0.1.7](https://github.com/divopsor/divops-packages/compare/init-berry@0.1.6...init-berry@0.1.7) (2023-06-24)
 
 
