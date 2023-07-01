@@ -1,4 +1,4 @@
-import { CreateContextOptions, createContext } from './context';
+import { CreateContextOptions, createContext, Context } from './context';
 import { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem , existsList } from './operations';
 
 export * from './models';
@@ -9,13 +9,20 @@ export const createGistCRUD = (options: CreateContextOptions) => {
   const context = createContext(options);
 
   return {
-    createItem: (options: Parameters<typeof createItem>[0]) => createItem(options, context),
-    createList: (options: Parameters<typeof createList>[0]) => createList(options, context),
-    existsList: (options: Parameters<typeof existsList>[0]) => existsList(options, context),
-    deleteItem: (options: Parameters<typeof deleteItem>[0]) => deleteItem(options, context),
-    deleteList: (options: Parameters<typeof deleteList>[0]) => deleteList(options, context),
-    readItem: (options: Parameters<typeof readItem>[0]) => readItem(options, context),
-    readList: (options: Parameters<typeof readList>[0]) => readList(options, context),
-    updateItem: (options: Parameters<typeof updateItem>[0]) => updateItem(options, context),
+    createItem: withContext(createItem, context),
+    createList: withContext(createList, context),
+    existsList: withContext(existsList, context),
+    deleteItem: withContext(deleteItem, context),
+    deleteList: withContext(deleteList, context),
+    readItem: withContext(readItem, context),
+    readList: withContext(readList, context),
+    updateItem: withContext(updateItem, context),
   };
 };
+
+function withContext<F extends (...args: any) => any>(
+  fn:F,
+  context: Context
+) {
+  return (options:Parameters<F>[0]):ReturnType<F> => fn(options, context);
+}
