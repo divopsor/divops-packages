@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.3 (2023-07-01)
+
+
+### Bug Fixes
+
+* **ggist-crud-core:** build error ([#32](https://github.com/divopsor/divops-packages/issues/32)) ([0e87d5d](https://github.com/divopsor/divops-packages/commit/0e87d5da430c0b91d3f17e7bc9400df61822794b))
+
+
+
+
+
 ## [0.2.2](https://github.com/divopsor/divops-packages/compare/@divops-packages/gist-crud-core@0.2.1...@divops-packages/gist-crud-core@0.2.2) (2023-07-01)
 
 **Note:** Version bump only for package @divops-packages/gist-crud-core
