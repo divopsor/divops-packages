@@ -1,8 +1,6 @@
 import { CreateContextOptions, createContext, Context } from './context';
 import { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem , existsList } from './operations';
 
-export * from './models';
-
 export { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem, createContext };
 
 export const createGistCRUD = (options: CreateContextOptions) => {

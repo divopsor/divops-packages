@@ -1,15 +1,15 @@
 import { GIST_META_FILE } from '../constants';
-import { GistNode } from '../models';
-import { GistFiles, JsonConvertible } from './types';
+import { Item } from '../models/index';
+import { RawItemRecord, JsonObject } from './types';
 
-export function parseRawGistFiles(rawFiles: GistFiles): GistNode[] {
-  const values = Object.values(rawFiles ?? {});
+export function parseRawItems(rawItemRecord: RawItemRecord): Item[] {
+  const rawItems = Object.values(rawItemRecord ?? {});
 
-  const exists = values.filter(<T>(t?: T | null): t is T => t != null);
+  const existsItems = rawItems.filter(<T>(t?: T | null): t is T => t != null);
 
-  const result: GistNode[] = [];
+  const result: Item[] = [];
 
-  for (const item of exists) {
+  for (const item of existsItems) {
     if (
       item.filename == null ||
       typeof item.filename !== 'string' ||
@@ -23,7 +23,7 @@ export function parseRawGistFiles(rawFiles: GistFiles): GistNode[] {
     try {
       result.push({
         id: item.filename,
-        body: JSON.parse(item.content) as JsonConvertible,
+        body: JSON.parse(item.content) as JsonObject,
       });
     } catch {
       throw new Error(`${item.filename}의 내용이 JSON 형태가 아닙니다. (${item.raw_url as string})`);

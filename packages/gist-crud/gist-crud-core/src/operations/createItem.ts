@@ -1,23 +1,23 @@
 import { Context } from '../context';
-import { Gist, GistNode } from '../models';
-import { serializeGistNodes } from '../utils/serializeGistNode';
+import { List, Item } from '../models';
+import { serializeItems } from '../utils/serializeItems';
 
 export interface CreateItemOptions {
-  id: Gist['id'];
-  gistNode: GistNode;
+  listId: List['id'];
+  item: Item;
 }
 
-export async function createItem({ id, gistNode }: CreateItemOptions, context: Context): Promise<Gist['id']> {
+export async function createItem({ listId, item }: CreateItemOptions, context: Context): Promise<List['id']> {
   const { octokit } = context;
 
   try {
     await octokit.rest.gists.update({
-      gist_id: id,
-      files: serializeGistNodes([gistNode]),
+      gist_id: listId,
+      files: serializeItems([item]),
       public: false,
     });
 
-    return id;
+    return listId;
   } catch (error: any) {
     console.error(error.message);
 

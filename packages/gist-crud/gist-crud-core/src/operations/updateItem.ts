@@ -1,21 +1,21 @@
 import { Context } from '../context';
-import { Gist, GistNode } from '../models';
-import { parseRawGistFiles } from '../utils/parseRawGistFiles';
-import { serializeGistNodes } from '../utils/serializeGistNode';
-import { GistFiles } from '../utils/types';
+import { List, Item } from '../models';
+import { parseRawItems } from '../utils/parseRawItems';
+import { serializeItems } from '../utils/serializeItems';
+import { RawItemRecord } from '../utils/types';
 
 export interface UpdateItemOptions {
-  id: Gist['id'];
-  nodeId: GistNode['id'];
-  params: GistNode;
+  listId: List['id'];
+  itemId: Item['id'];
+  params: Item;
 }
 
-export async function updateItem({ id, nodeId, params }: UpdateItemOptions, context: Context): Promise<GistNode> {
+export async function updateItem({ listId, itemId, params }: UpdateItemOptions, context: Context): Promise<Item> {
   const { octokit } = context;
 
   const { data } = await octokit.rest.gists.update({
-    gist_id: id,
-    files: serializeGistNodes([{ id: nodeId, body: params.body }]),
+    gist_id: listId,
+    files: serializeItems([{ id: itemId, body: params.body }]),
     public: false,
   });
 
@@ -23,13 +23,13 @@ export async function updateItem({ id, nodeId, params }: UpdateItemOptions, cont
     throw new Error(`존재하지 않습니다.`);
   }
 
-  const gistNodes = parseRawGistFiles(data.files as GistFiles);
+  const items = parseRawItems(data.files as RawItemRecord);
 
-  const node = gistNodes.find(x => x.id === params.id);
+  const item = items.find(x => x.id === params.id);
 
-  if (node == null) {
+  if (item == null) {
     throw new Error(`존재하지 않습니다.`);
   }
 
-  return node;
+  return item;
 }

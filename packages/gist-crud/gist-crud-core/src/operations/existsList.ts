@@ -1,16 +1,16 @@
 import { Context } from '../context';
-import { Gist } from '../models';
+import { List } from '../models';
 
 export interface ExistsListOptions {
-  id: Gist['id'];
+  listId: List['id'];
 }
 
-export async function existsList({ id }: ExistsListOptions, context: Context): Promise<boolean> {
+export async function existsList({ listId }: ExistsListOptions, context: Context): Promise<boolean> {
   const { octokit } = context;
 
   try {
     await octokit.rest.gists.get({
-      gist_id: id,
+      gist_id: listId,
     });
     return true;
   } catch {
