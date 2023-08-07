@@ -1,13 +1,13 @@
 import { GIST_META_FILE } from '../constants';
 import { Context } from '../context';
-import { Gist } from '../models';
-import { GistFiles, parseRawGistFiles } from '../utils';
+import { List } from '../models';
+import { RawItemRecord, parseRawItems } from '../utils';
 
 export interface CreateListOptions {
   description: string;
 }
 
-export async function createList({ description }: CreateListOptions, context: Context): Promise<Gist> {
+export async function createList({ description }: CreateListOptions, context: Context): Promise<List> {
   const { octokit } = context;
 
   const { data } = await octokit.rest.gists.create({
@@ -27,6 +27,6 @@ export async function createList({ description }: CreateListOptions, context: Co
   return {
     id: data.id,
     description: data.description ?? '',
-    gistNodes: parseRawGistFiles(data.files as GistFiles),
+    items: parseRawItems(data.files as RawItemRecord),
   };
 }

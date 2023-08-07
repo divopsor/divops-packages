@@ -1,3 +1,3 @@
-export * from './parseRawGistFiles';
-export * from './serializeGistNode';
+export * from './parseRawItems';
+export * from './serializeItems';
 export * from './types';

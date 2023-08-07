@@ -1,8 +1,9 @@
-export type GistFiles = {
+export type RawItemRecord = {
   [key: string]: Partial<{
     [key: string]: unknown;
   }>;
 };
-export type JsonConvertible = {
-  [P in keyof any]: P extends string | number | boolean | undefined ? P : JsonConvertible;
-} | JsonConvertible[];
+
+export type JsonObject = {
+  [P in keyof any]: P extends string | number | boolean | undefined ? P : JsonObject;
+} | JsonObject[];

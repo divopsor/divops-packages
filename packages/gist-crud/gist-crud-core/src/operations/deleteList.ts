@@ -1,12 +1,12 @@
 import { Context } from '../context';
-import { Gist } from '../models';
+import { List } from '../models';
 
 export interface DeleteListOptions {
-  id: Gist['id'];
+  listId: List['id'];
 }
 
-export async function deleteList({ id }: DeleteListOptions, context: Context): Promise<void> {
+export async function deleteList({ listId }: DeleteListOptions, context: Context): Promise<void> {
   const { octokit } = context;
 
-  await octokit.rest.gists.delete({ gist_id: id });
+  await octokit.rest.gists.delete({ gist_id: listId });
 }
