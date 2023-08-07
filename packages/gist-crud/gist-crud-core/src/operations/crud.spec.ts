@@ -24,16 +24,16 @@ describe('createItem은', () => {
       baseUrl: 'https://api.github.com',
     });
 
-    const { id } = await createList({ description: '테스트 gist 입니다. 보이면 지워주세요.' }, context);
-    expect(id).not.toBe(null);
+    const { id: listId } = await createList({ description: '테스트 gist 입니다. 보이면 지워주세요.' }, context);
+    expect(listId).not.toBe(null);
 
-    const nodeId = 'test';
+    const itemId = 'test';
     const body = { test: 'true' };
     const changed = { changed: 'true' };
 
-    await createItem({ id, gistNode: { id: nodeId, body } }, context);
+    await createItem({ listId, item: { id: itemId, body } }, context);
 
-    const item = await readItem({ id, nodeId }, context);
+    const item = await readItem({ listId, itemId }, context);
 
     expect(item).toMatchInlineSnapshot(`
       Object {
@@ -44,9 +44,9 @@ describe('createItem은', () => {
       }
     `);
 
-    await updateItem({ id, nodeId, params: { id: nodeId, body: changed } }, context);
+    await updateItem({ listId, itemId, params: { id: itemId, body: changed } }, context);
 
-    const updated = await readItem({ id, nodeId }, context);
+    const updated = await readItem({ listId, itemId }, context);
 
     expect(updated).toMatchInlineSnapshot(`
       Object {
@@ -57,17 +57,17 @@ describe('createItem은', () => {
       }
     `);
 
-    await deleteItem({ id, nodeId }, context);
+    await deleteItem({ listId, itemId }, context);
 
     let error = null;
     try {
-      await readItem({ id, nodeId }, context);
+      await readItem({ listId, itemId }, context);
     } catch (e) {
       error = e;
     }
 
-    expect(error).toMatchInlineSnapshot(`[Error: ${id}의 test를 찾을 수 없습니다.]`);
+    expect(error).toMatchInlineSnapshot(`[Error: ${listId}의 test를 찾을 수 없습니다.]`);
 
-    await deleteList({ id }, context);
+    await deleteList({ listId }, context);
   });
 });
