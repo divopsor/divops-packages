@@ -1464,6 +1464,23 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@divops-packages/node-utils@workspace:packages/node-utils":
+  version: 0.0.0-use.local
+  resolution: "@divops-packages/node-utils@workspace:packages/node-utils"
+  dependencies:
+    "@babel/core": ^7.22.5
+    "@babel/preset-env": ^7.22.5
+    "@babel/preset-typescript": ^7.22.5
+    "@types/node": ^20.3.1
+    eslint: ^8.43.0
+    eslint-import-resolver-typescript: ^3.5.3
+    eslint-plugin-import: ^2.23.3
+    prettier: ^2.8.8
+    tsup: ^7.2.0
+    typescript: ^4.9.5
+  languageName: unknown
+  linkType: soft
+
 "@esbuild/android-arm64@npm:0.18.4":
   version: 0.18.4
   resolution: "@esbuild/android-arm64@npm:0.18.4"
@@ -11088,6 +11105,42 @@ __metadata:
     tsup: dist/cli-default.js
     tsup-node: dist/cli-node.js
   checksum: 25dda9ca37ab1763986dc34a8eabf2c3d3184834b33b2026907b7bbcf1cea3a4841e645cc3cdd1011eb8aaf9ce9959ddfb9cfeeee8efee0e485f3bae232aacf5
+  languageName: node
+  linkType: hard
+
+"tsup@npm:^7.2.0":
+  version: 7.2.0
+  resolution: "tsup@npm:7.2.0"
+  dependencies:
+    bundle-require: ^4.0.0
+    cac: ^6.7.12
+    chokidar: ^3.5.1
+    debug: ^4.3.1
+    esbuild: ^0.18.2
+    execa: ^5.0.0
+    globby: ^11.0.3
+    joycon: ^3.0.1
+    postcss-load-config: ^4.0.1
+    resolve-from: ^5.0.0
+    rollup: ^3.2.5
+    source-map: 0.8.0-beta.0
+    sucrase: ^3.20.3
+    tree-kill: ^1.2.2
+  peerDependencies:
+    "@swc/core": ^1
+    postcss: ^8.4.12
+    typescript: ">=4.1.0"
+  peerDependenciesMeta:
+    "@swc/core":
+      optional: true
+    postcss:
+      optional: true
+    typescript:
+      optional: true
+  bin:
+    tsup: dist/cli-default.js
+    tsup-node: dist/cli-node.js
+  checksum: 94feae12b0a0dd0eaa3ed1c412d2bc51d7491ff91abc61e4198495dcb612a848a9fd346fbb668a63b98534fc6c2569ab3aba7ea95ad8db5eaf29c4a4885c2313
   languageName: node
   linkType: hard
 
