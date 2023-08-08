@@ -20,7 +20,7 @@
   },
   "scripts": {
     "prepack": "yarn build",
-    "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
+    "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts --onSuccess \"node ../../../scripts/postBuild.js\"",
     "dev": "yarn run build --watch",
     "typecheck": "tsc --noEmit"
   },
