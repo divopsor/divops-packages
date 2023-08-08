@@ -1,7 +1,12 @@
 {
   "editor.formatOnSave": true,
   // An array of language ids which should be validated by ESLint
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "eslint.enable": true,
   "eslint.nodePath": ".yarn/sdks",
   // When enabled, will trim trailing whitespace when saving a file.

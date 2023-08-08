@@ -1,0 +1,40 @@
+{
+  "name": "@divops-packages/node-utils",
+  "version": "0.0.0",
+  "main": "./src/index.ts",
+  "exports": {
+    ".": "./src/index.ts",
+    "./package.json": "./package.json"
+  },
+  "publishConfig": {
+    "access": "public",
+    "exports": {
+      ".": {
+        "types": "./dist/index.d.ts",
+        "require": "./dist/index.js",
+        "import": "./dist/index.mjs"
+      },
+      "./package.json": "./package.json"
+    },
+    "main": "./dist/index.js"
+  },
+  "scripts": {
+    "prepack": "yarn build",
+    "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts --onSuccess \"node ../../scripts/postBuild.js\"",
+    "dev": "yarn run build --watch",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.22.5",
+    "@babel/preset-env": "^7.22.5",
+    "@babel/preset-typescript": "^7.22.5",
+    "@types/node": "^20.3.1",
+    "eslint": "^8.43.0",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-import": "^2.23.3",
+    "prettier": "^2.8.8",
+    "tsup": "^7.2.0",
+    "typescript": "^4.9.5"
+  },
+  "access": "public"
+}
