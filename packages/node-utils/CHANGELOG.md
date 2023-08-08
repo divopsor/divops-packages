@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.1](https://github.com/divopsor/divops-packages/compare/@divops-packages/node-utils@0.1.0...@divops-packages/node-utils@0.1.1) (2023-08-08)
+
+
+### Bug Fixes
+
+* **ensureEnv:** specify return value ([#36](https://github.com/divopsor/divops-packages/issues/36)) ([fee44ca](https://github.com/divopsor/divops-packages/commit/fee44cac9959bb64f391a12314e274cfff27fe60))
+
+
+
+
+
 # 0.1.0 (2023-08-08)
 
 
