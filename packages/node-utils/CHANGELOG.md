@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.1.2 (2023-08-08)
+
+
+### Bug Fixes
+
+* **ensureEnv:** key 로 정확하게 수정 ([740c50c](https://github.com/divopsor/divops-packages/commit/740c50cf238253a3309fb553c3366145577286ec))
+
+
+
+
+
 ## [0.1.1](https://github.com/divopsor/divops-packages/compare/@divops-packages/node-utils@0.1.0...@divops-packages/node-utils@0.1.1) (2023-08-08)
 
 
