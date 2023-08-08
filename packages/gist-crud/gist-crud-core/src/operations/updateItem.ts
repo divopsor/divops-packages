@@ -7,15 +7,15 @@ import { RawItemRecord } from '../utils/types';
 export interface UpdateItemOptions {
   listId: List['id'];
   itemId: Item['id'];
-  params: Item;
+  item: Item;
 }
 
-export async function updateItem({ listId, itemId, params }: UpdateItemOptions, context: Context): Promise<Item> {
+export async function updateItem({ listId, itemId, item }: UpdateItemOptions, context: Context): Promise<Item> {
   const { octokit } = context;
 
   const { data } = await octokit.rest.gists.update({
     gist_id: listId,
-    files: serializeItems([{ id: itemId, body: params.body }]),
+    files: serializeItems([{ id: itemId, body: item.body }]),
     public: false,
   });
 
@@ -25,11 +25,11 @@ export async function updateItem({ listId, itemId, params }: UpdateItemOptions, 
 
   const items = parseRawItems(data.files as RawItemRecord);
 
-  const item = items.find(x => x.id === params.id);
+  const result = items.find(x => x.id === item.id);
 
-  if (item == null) {
+  if (result == null) {
     throw new Error(`존재하지 않습니다.`);
   }
 
-  return item;
+  return result;
 }
