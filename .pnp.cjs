@@ -4258,6 +4258,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/endpoint", "npm:6.0.12"],\
             ["@octokit/request-error", "npm:2.1.0"],\
             ["@octokit/types", "npm:6.41.0"],\
+            ["encoding", "npm:0.1.13"],\
             ["is-plain-object", "npm:5.0.0"],\
             ["node-fetch", "virtual:1b72fec7bb0f7f65631883ba39976a89b23a387bb935170eee37fef528f0caab0bcc7663f8211ff33a22ee11d361aa1b8f34bec752dd83d1882c9de3d3bc1fbf#npm:2.6.9"],\
             ["universal-user-agent", "npm:6.0.0"]\
@@ -4271,6 +4272,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@octokit/endpoint", "npm:7.0.5"],\
             ["@octokit/request-error", "npm:3.0.3"],\
             ["@octokit/types", "npm:9.1.2"],\
+            ["encoding", "npm:0.1.13"],\
             ["is-plain-object", "npm:5.0.0"],\
             ["node-fetch", "virtual:1b72fec7bb0f7f65631883ba39976a89b23a387bb935170eee37fef528f0caab0bcc7663f8211ff33a22ee11d361aa1b8f34bec752dd83d1882c9de3d3bc1fbf#npm:2.6.9"],\
             ["universal-user-agent", "npm:6.0.0"]\
@@ -10945,7 +10947,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageDependencies": [\
             ["node-fetch", "virtual:1b72fec7bb0f7f65631883ba39976a89b23a387bb935170eee37fef528f0caab0bcc7663f8211ff33a22ee11d361aa1b8f34bec752dd83d1882c9de3d3bc1fbf#npm:2.6.9"],\
             ["@types/encoding", null],\
-            ["encoding", null],\
+            ["encoding", "npm:0.1.13"],\
             ["whatwg-url", "npm:5.0.0"]\
           ],\
           "packagePeers": [\
