@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.3.1](https://github.com/divopsor/divops-packages/compare/@divops-packages/gist-crud-core@0.3.0...@divops-packages/gist-crud-core@0.3.1) (2023-08-08)
+
+
+### Bug Fixes
+
+* **gist-crud-core:** GIST_META_FILE 기본 파일명으로 수정 ([#34](https://github.com/divopsor/divops-packages/issues/34)) ([6df6582](https://github.com/divopsor/divops-packages/commit/6df65822389cc6684b6d57537cee7a909fcd4c44))
+
+
+
+
+
 # [0.3.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/gist-crud-core@0.2.3...@divops-packages/gist-crud-core@0.3.0) (2023-08-07)
 
 
