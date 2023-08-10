@@ -1,7 +1,7 @@
 import { CreateContextOptions, createContext, Context } from './context';
-import { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem , existsList } from './operations';
+import { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem, updateItems, existsList } from './operations';
 
-export { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem, createContext };
+export { createItem, createList, deleteItem, deleteList, readItem, readList, updateItem, updateItems, existsList, createContext };
 
 export const createGistCRUD = (options: CreateContextOptions) => {
   const context = createContext(options);
@@ -15,6 +15,7 @@ export const createGistCRUD = (options: CreateContextOptions) => {
     readItem: withContext(readItem, context),
     readList: withContext(readList, context),
     updateItem: withContext(updateItem, context),
+    updateItems: withContext(updateItems, context),
   };
 };
 
