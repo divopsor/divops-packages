@@ -31,9 +31,18 @@ describe('createItem은', () => {
     const body = { test: 'true' };
     const changed = { changed: 'true' };
 
-    await createItem({ listId, item: { id: itemId, body } }, context);
+    await createItem({
+      listId,
+      item: {
+        id: itemId,
+        body,
+      },
+    }, context);
 
-    const item = await readItem({ listId, itemId }, context);
+    const item = await readItem({
+      listId,
+      itemId,
+    }, context);
 
     expect(item).toMatchInlineSnapshot(`
       Object {
@@ -44,9 +53,19 @@ describe('createItem은', () => {
       }
     `);
 
-    await updateItem({ listId, itemId, params: { id: itemId, body: changed } }, context);
+    await updateItem({
+      listId,
+      itemId,
+      item: {
+        id: itemId,
+        body: changed,
+      },
+    }, context);
 
-    const updated = await readItem({ listId, itemId }, context);
+    const updated = await readItem({
+      listId,
+      itemId,
+    }, context);
 
     expect(updated).toMatchInlineSnapshot(`
       Object {
@@ -57,11 +76,17 @@ describe('createItem은', () => {
       }
     `);
 
-    await deleteItem({ listId, itemId }, context);
+    await deleteItem({
+      listId,
+      itemId,
+    }, context);
 
     let error = null;
     try {
-      await readItem({ listId, itemId }, context);
+      await readItem({
+        listId,
+        itemId,
+      }, context);
     } catch (e) {
       error = e;
     }

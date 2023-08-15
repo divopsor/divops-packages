@@ -7,5 +7,6 @@ to: packages/<%= name %>/tsconfig.json
     "rootDir": "./src",
     "outDir": "./dist"
   },
-  "include": ["src"]
+  "include": ["src"],
+  "exclude": ["node_modules", "src/**/*.spec.ts"]
 }

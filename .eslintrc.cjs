@@ -1,25 +1,43 @@
 module.exports = {
   root: true,
 
-  env: { es6: true, node: true },
+  env: { es6: true, node: true, browser: true, },
 
   parser: '@typescript-eslint/parser',
 
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'prettier',
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "airbnb-typescript",
+    "plugin:import/recommended",
   ],
-  plugins: ['import', '@typescript-eslint'],
+  plugins: ['import', '@typescript-eslint', 'react'],
   settings: {
-    'import/ignore': ['node_modules'],
+    // NOTE: 아래 내용을 추가해야 ts 로 추가한 alias paths 설정을 eslint 에서 읽을 수 있음
+    'import/resolver': {
+      typescript: {
+        project: '*/tsconfig.json',
+      },
+    },
+  },
+  ecmaFeatures:  {
+    jsx:  true,  // Allows for the parsing of JSX
   },
   rules: {
     '@typescript-eslint/no-empty-function': 'off',
     '@typescript-eslint/no-empty-interface': 'off',
     '@typescript-eslint/array-type': ['error', { default: 'array-simple' }],
-    'eol-last': ['error', 'always'],
+    'import/no-unresolved': 'error',
+    'react/react-in-jsx-scope': 'off',
     '@typescript-eslint/no-unused-vars': 'error',
+
+    // Ensure consistent use of file extension within the import path
+    // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
+    'import/extensions': 'off',
+    'import/no-extraneous-dependencies': 'off',
+    '@next/next/no-html-link-for-pages': 'off',
 
     // NOTE: 유용하게 쓰일 수 있음
     '@typescript-eslint/no-non-null-assertion': 'off',
@@ -29,18 +47,7 @@ module.exports = {
 
     "@typescript-eslint/strict-boolean-expressions": 'off',
 
-    'no-restricted-imports': [
-      'error',
-      {
-        paths: [
-          {
-            name: 'util',
-            importNames: ['isArray'],
-            message: '`Array.isArray`를 대신 사용해주세요!',
-          },
-        ],
-      },
-    ],
+
 
     // https://typescript-eslint.io/linting/troubleshooting/performance-troubleshooting#eslint-plugin-import
     'import/named': 'off',
@@ -52,20 +59,32 @@ module.exports = {
     'import/no-unused-modules': 'off',
     'import/no-deprecated': 'off',
     'import/no-duplicates': 'error',
+
     'import/order': [
       'error',
       {
         groups: [['builtin', 'external', 'internal'], 'parent', 'sibling', 'index'],
-        alphabetize: { order: 'asc' },
+        pathGroups: [],
+        pathGroupsExcludedImportTypes: ['@tanstack*'],
+        alphabetize: {
+          order: 'asc',
+        },
       },
     ],
 
-    'semi': 'error',
-    'no-multiple-empty-lines': [
-      'error',
-      {
-        max: 1
-      }
-    ],
+    '@typescript-eslint/no-use-before-define': 'off',
+
+    'no-multiple-empty-lines': ['error', { max: 1, maxBOF: 0, maxEOF: 0 }],
+    'react/jsx-props-no-multi-spaces': 'error',
+    'key-spacing': ['error', { beforeColon: false }],
+    'eol-last': ['error', 'always'],
+    'no-trailing-spaces': 'error',
+    'no-multi-spaces': 'error',
+
+    'curly': ['error', 'all'],
+    'eqeqeq': ['error', 'always', { null: 'ignore' }],
+
+    "object-curly-newline": ["error", { "multiline": true }],
+    "object-curly-spacing": ["error", "always"]
   },
 };
