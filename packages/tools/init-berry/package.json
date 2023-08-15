@@ -1,6 +1,6 @@
 {
   "name": "init-berry",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "bin": "./bin/internal.js",
   "exports": {
     "./package.json": "./package.json"
