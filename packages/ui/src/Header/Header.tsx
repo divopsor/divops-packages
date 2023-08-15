@@ -11,6 +11,7 @@ export const HeaderImpl = forwardRef<HTMLElement, HeaderProps>((props, ref) => {
       <header
         ref={ref}
         style={{
+          backgroundColor: 'white',
           position: 'fixed',
           top: 0,
           height: '48px',
