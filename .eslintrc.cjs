@@ -22,6 +22,11 @@ module.exports = {
       },
     },
   },
+  parserOptions: {
+    ecmaVersion: "latest",
+    sourceType: "module",
+    project: ['./tsconfig.eslint.json', './packages/*/tsconfig.json'],
+  },
   ecmaFeatures:  {
     jsx:  true,  // Allows for the parsing of JSX
   },
@@ -37,7 +42,6 @@ module.exports = {
     // https://github.com/benmosher/eslint-plugin-import/blob/master/docs/rules/extensions.md
     'import/extensions': 'off',
     'import/no-extraneous-dependencies': 'off',
-    '@next/next/no-html-link-for-pages': 'off',
 
     // NOTE: 유용하게 쓰일 수 있음
     '@typescript-eslint/no-non-null-assertion': 'off',
@@ -46,8 +50,6 @@ module.exports = {
     '@typescript-eslint/require-await': 'off',
 
     "@typescript-eslint/strict-boolean-expressions": 'off',
-
-
 
     // https://typescript-eslint.io/linting/troubleshooting/performance-troubleshooting#eslint-plugin-import
     'import/named': 'off',
@@ -85,6 +87,19 @@ module.exports = {
     'eqeqeq': ['error', 'always', { null: 'ignore' }],
 
     "object-curly-newline": ["error", { "multiline": true }],
-    "object-curly-spacing": ["error", "always"]
+    "object-curly-spacing": ["error", "always"],
+
+    "react/jsx-indent" : ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+
+    // react jsx 관련 lint
+    "react/jsx-indent" : ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-newline": ["error", { "prevent": false }],
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "proportional-always", "closingSlash": "never" }],
+    "react/jsx-space-before-closing": ["error"],
+    "react/jsx-closing-bracket-location": ["error"],
+    "react/jsx-closing-tag-location": ["error"],
+    "react/jsx-first-prop-new-line": ["error", "multiline"]
   },
 };
