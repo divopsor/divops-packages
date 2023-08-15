@@ -90,6 +90,16 @@ module.exports = {
     "object-curly-spacing": ["error", "always"],
 
     "react/jsx-indent" : ["error", 2],
-    "react/jsx-indent-props": ["error", 2]
+    "react/jsx-indent-props": ["error", 2],
+
+    // react jsx 관련 lint
+    "react/jsx-indent" : ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
+    "react/jsx-newline": ["error", { "prevent": false }],
+    "react/jsx-tag-spacing": ["error", { "beforeSelfClosing": "proportional-always", "closingSlash": "never" }],
+    "react/jsx-space-before-closing": ["error"],
+    "react/jsx-closing-bracket-location": ["error"],
+    "react/jsx-closing-tag-location": ["error"],
+    "react/jsx-first-prop-new-line": ["error", "multiline"]
   },
 };

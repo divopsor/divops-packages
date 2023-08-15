@@ -20,12 +20,16 @@ export const HeaderImpl = forwardRef<HTMLElement, HeaderProps>((props, ref) => {
       >
         {children}
       </header>
-      <div style={{
-        position: 'relative',
-        top: 0,
-        height: '48px',
-        width: '100%',
-      }}/>
+
+      <div
+        style={{
+          position: 'relative',
+          top: 0,
+          height: '48px',
+          width: '100%',
+        }}
+
+      />
     </>
   );
 });
