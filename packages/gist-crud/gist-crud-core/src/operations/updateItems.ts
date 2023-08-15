@@ -19,7 +19,7 @@ export async function updateItems({ listId, items }: UpdateItemsOptions, context
   });
 
   if (data.files == null) {
-    throw new Error(`존재하지 않습니다.`);
+    throw new Error('존재하지 않습니다.');
   }
 
   return parseRawItems(data.files as RawItemRecord);

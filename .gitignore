@@ -113,3 +113,7 @@ dist
 !.yarn/versions
 
 .npmrc
+
+# panda css
+
+styled-system

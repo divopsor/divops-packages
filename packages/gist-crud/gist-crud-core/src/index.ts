@@ -21,7 +21,7 @@ export const createGistCRUD = (options: CreateContextOptions) => {
 
 function withContext<F extends (...args: any) => any>(
   fn:F,
-  context: Context
+  context: Context,
 ) {
   return (options:Parameters<F>[0]):ReturnType<F> => fn(options, context);
 }

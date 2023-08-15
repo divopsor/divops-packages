@@ -13,3 +13,4 @@ bin
 .pnp.*
 .eslintrc.cjs
 babel.config.js
+scripts
