@@ -24,7 +24,7 @@
     "main": "./dist/index.js"
   },
   "scripts": {
-    "prepack": "yarn build && node ../../.scripts/postBuild.js",
+    "prepack": "yarn build && node ../../scripts/postBuild.js",
     "build": "rm -rf dist && tsup ./src/index.ts --format cjs,esm --dts",
     "dev": "yarn run build --watch",
     "lint": "lint",
