@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.1.4](https://github.com/divopsor/divops-packages/compare/@divops-packages/ui@0.1.3...@divops-packages/ui@0.1.4) (2023-08-15)
+
+
+### Bug Fixes
+
+* **header:** type error ([#42](https://github.com/divopsor/divops-packages/issues/42)) ([d8945e1](https://github.com/divopsor/divops-packages/commit/d8945e1b30037581d5cac9f3dba5f50d17354755))
+
+
+
+
+
 ## [0.1.3](https://github.com/divopsor/divops-packages/compare/@divops-packages/ui@0.1.2...@divops-packages/ui@0.1.3) (2023-08-15)
 
 
