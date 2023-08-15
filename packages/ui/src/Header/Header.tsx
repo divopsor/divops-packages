@@ -1,12 +1,11 @@
 import { HTMLAttributes, forwardRef } from 'react';
 import { HeaderLogo } from './HeaderLogo';
 
-export interface HeaderProps extends HTMLAttributes<HTMLDivElement> {
-  height?: number;
-}
+export type HeaderProps = HTMLAttributes<HTMLDivElement>;
 
 export const HeaderImpl = forwardRef<HTMLElement, HeaderProps>((props, ref) => {
-  const { height = 48, children, ...restProps } = props;
+  const { children, ...restProps } = props;
+  const height = 48;
 
   return (
     <>
