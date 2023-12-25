@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.3.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/ui@0.2.0...@divops-packages/ui@0.3.0) (2023-12-25)
+
+
+### Features
+
+* **ui:** card 추가 2 ([#44](https://github.com/divopsor/divops-packages/issues/44)) ([44e290f](https://github.com/divopsor/divops-packages/commit/44e290f7eefa32ccf82ab94edb44a632bd58fefe))
+
+
+
+
+
 # [0.2.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/ui@0.1.4...@divops-packages/ui@0.2.0) (2023-12-25)
 
 
