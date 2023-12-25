@@ -38,4 +38,4 @@ export const CardImpl = forwardRef<HTMLDivElement, CardProps>((props, ref) => {
 
 CardImpl.displayName = 'Card';
 
-export const Card = Object.assign(CardImpl);
+export const Card = Object.assign(CardImpl, {});
