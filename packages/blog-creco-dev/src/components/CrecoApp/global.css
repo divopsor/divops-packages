@@ -1,6 +1,4 @@
-import { Colors } from '../../colors';
 
-export const GLOBAL_CSS = `
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -98,7 +96,7 @@ h6 {
 }
 
 html {
-  background-color: ${Colors.Dark};
+  background-color: #2B2B29;
 }
 
 @media (max-width: 400px) {
@@ -130,4 +128,3 @@ html {
 bold {
   font-weight: bold;
 }
-`;

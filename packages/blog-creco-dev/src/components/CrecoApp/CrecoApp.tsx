@@ -1,6 +1,7 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactNode } from 'react';
-import { GlobalCss } from '../GlobalCss';
+import './global.css';
+import './crecoApp.css';
 
 interface CrecoAppProps {
   additionalCss?: string;
@@ -10,7 +11,7 @@ interface CrecoAppProps {
 
 const defaultQueryClient = new QueryClient();
 
-export function CrecoApp({ additionalCss = '', children, queryClient = defaultQueryClient }: CrecoAppProps) {
+export function CrecoApp({ children, queryClient = defaultQueryClient }: CrecoAppProps) {
   return (
     <>
       <QueryClientProvider client={queryClient}>
@@ -18,14 +19,6 @@ export function CrecoApp({ additionalCss = '', children, queryClient = defaultQu
       </QueryClientProvider>
       <div className='mobile-ui' style={{ width: 0, height: 0 }} />
       <div className='desktop-ui' style={{ width: 0, height: 0 }} />
-      <GlobalCss
-        additionalCss={`
-          ${additionalCss}
-          .Post img {
-            border-radius: 16px;
-          }
-        `}
-      />
     </>
   );
 
