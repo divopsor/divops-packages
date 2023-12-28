@@ -8,7 +8,9 @@ interface CrecoAppProps {
   queryClient?: QueryClient;
 }
 
-export function CrecoApp({ additionalCss = '', children, queryClient = new QueryClient() }: CrecoAppProps) {
+const defaultQueryClient = new QueryClient();
+
+export function CrecoApp({ additionalCss = '', children, queryClient = defaultQueryClient }: CrecoAppProps) {
   return (
     <QueryClientProvider client={queryClient}>
       {children}
