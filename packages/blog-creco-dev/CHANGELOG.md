@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.2.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.1.2...@divops-packages/blog-creco-dev@0.2.0) (2023-12-28)
+
+
+### Features
+
+* add spacing ([be5c745](https://github.com/divopsor/divops-packages/commit/be5c745e77b52edbeea56c435505e624ec85a84a))
+
+
+
+
+
 ## [0.1.2](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.1.1...@divops-packages/blog-creco-dev@0.1.2) (2023-12-28)
 
 

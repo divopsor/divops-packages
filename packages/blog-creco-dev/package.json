@@ -1,6 +1,6 @@
 {
   "name": "@divops-packages/blog-creco-dev",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
