@@ -119,7 +119,7 @@ html {
   .desktop-ui {
     display: block;
   }
-  .clickable {
+  .clickable:hover {
     text-decoration: underline;
     cursor: pointer;
   }
