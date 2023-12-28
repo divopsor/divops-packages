@@ -2,7 +2,7 @@ const cache = new Map<string, any>();
 
 export async function fetchListBuildtime({
   baseURL = 'https://blog.creco.dev',
-  prefix = '/apo/gist',
+  prefix = '/api/gist',
   category,
 }: {
   baseURL?: string;
