@@ -15,7 +15,10 @@ export const GlobalCss = ({ additionalCss }: { additionalCss?: string }) => {
   const isRendered = useRendered();
 
   return (
-    <style>
+    // eslint-disable-next-line @typescript-eslint/ban-ts-comment
+    // @ts-ignore
+    // eslint-disable-next-line react/no-unknown-property
+    <style global>
       {GLOBAL_CSS}
       {isRendered ? additionalCss : null}
     </style>
