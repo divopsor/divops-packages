@@ -4,6 +4,8 @@
   "main": "src/index.ts",
   "exports": {
     ".": "./src/index.ts",
+    "./global.css": "./global.css",
+    "./crecoApp.css": "./crecoApp.css",
     "./package.json": "./package.json"
   },
   "publishConfig": {
@@ -19,6 +21,8 @@
           "default": "./dist/index.mjs"
         }
       },
+      "./global.css": "./global.css",
+      "./crecoApp.css": "./crecoApp.css",
       "./package.json": "./package.json"
     },
     "main": "./dist/index.js"
