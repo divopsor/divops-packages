@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.11](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.10...@divops-packages/blog-creco-dev@0.4.11) (2023-12-28)
+
+
+### Bug Fixes
+
+* global.css ([8cd9e76](https://github.com/divopsor/divops-packages/commit/8cd9e7626d56b56758edad7c2b64fdd13f79b054))
+
+
+
+
+
 ## [0.4.10](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.9...@divops-packages/blog-creco-dev@0.4.10) (2023-12-28)
 
 **Note:** Version bump only for package @divops-packages/blog-creco-dev
