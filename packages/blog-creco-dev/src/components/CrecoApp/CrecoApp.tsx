@@ -12,8 +12,10 @@ const defaultQueryClient = new QueryClient();
 
 export function CrecoApp({ additionalCss = '', children, queryClient = defaultQueryClient }: CrecoAppProps) {
   return (
-    <QueryClientProvider client={queryClient}>
-      {children}
+    <>
+      <QueryClientProvider client={queryClient}>
+        {children}
+      </QueryClientProvider>
       <div className='mobile-ui' style={{ width: 0, height: 0 }} />
       <div className='desktop-ui' style={{ width: 0, height: 0 }} />
       <GlobalCss
@@ -24,7 +26,7 @@ export function CrecoApp({ additionalCss = '', children, queryClient = defaultQu
           }
         `}
       />
-    </QueryClientProvider>
+    </>
   );
 
 }
