@@ -1,6 +1,6 @@
 import { fetchListBuildtime } from './fetchListBuildtime';
 
-export async function getStaticPaths({
+export async function getCrecoAppStaticPaths({
   baseURL = 'https://blog.creco.dev',
   prefix = '/apo/gist',
   category,

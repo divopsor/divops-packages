@@ -1,6 +1,6 @@
 import { fetchListBuildtime } from './fetchListBuildtime';
 
-export async function getStaticProps(context: { params: any }, {
+export async function getCrecoAppStaticProps(context: { params?: any }, {
   baseURL = 'https://blog.creco.dev',
   prefix = '/apo/gist',
   category,

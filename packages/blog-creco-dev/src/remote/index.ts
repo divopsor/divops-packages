@@ -1,2 +1,2 @@
-export * from './getStaticPaths';
-export * from './getStaticProps';
+export * from './getCrecoAppStaticPaths';
+export * from './getCrecoAppStaticProps';
