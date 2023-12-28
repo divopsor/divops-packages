@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.3](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.2...@divops-packages/blog-creco-dev@0.4.3) (2023-12-28)
+
+
+### Bug Fixes
+
+* getCrecoAppStaticPaths/getCrecoAppStaticProps ([51ffe9f](https://github.com/divopsor/divops-packages/commit/51ffe9f76eda63c9e00794bcbc9d5071bd59472a))
+
+
+
+
+
 ## [0.4.2](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.1...@divops-packages/blog-creco-dev@0.4.2) (2023-12-28)
 
 **Note:** Version bump only for package @divops-packages/blog-creco-dev
