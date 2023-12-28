@@ -1,4 +1,4 @@
-import { HTMLAttributes } from 'react';
+import { HTMLAttributes, ReactNode } from 'react';
 import { Colors } from '../../colors';
 import { DesktopPage } from './DesktopPage';
 import { MobilePage } from './MobilePage';
@@ -8,6 +8,7 @@ interface ResponsivePageProps extends HTMLAttributes<HTMLDivElement> {
   subBackgroundColor: string;
   fontColor: string;
   desktopPageWidth: string;
+  children?: ReactNode;
 }
 
 export const ResponsivePage = ({
