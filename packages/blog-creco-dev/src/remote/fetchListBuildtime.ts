@@ -11,7 +11,7 @@ export async function fetchListBuildtime({
 }) {
   const url = `${baseURL}${prefix}/${category}/list`;
 
-  if (cache.has(url) != null) {
+  if (cache.has(url)) {
     return cache.get(url);
   }
 
