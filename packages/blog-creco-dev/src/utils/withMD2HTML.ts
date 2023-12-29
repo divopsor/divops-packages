@@ -1,5 +1,5 @@
-export function withMD2HTML(markdown: string) {
-  const lines = markdown.split('\n');
+export function withMD2HTML(markdown?: string) {
+  const lines = markdown?.split('\n') ?? [];
   const resultLines: string[] = [];
 
   for (let line of lines) {
