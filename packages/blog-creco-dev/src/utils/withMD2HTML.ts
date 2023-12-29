@@ -13,7 +13,10 @@ export function withMD2HTML(markdown: string) {
 
       resultLines.push(`
         <div style="text-align: center; display: flex; width: 100%; justify-content: space-evenly; flex-wrap: wrap; gap: 20px;">
-          ${images.map(x => `<img src="${x}" style="max-height: 320px; max-width: 100%" />`).join('')}
+          ${images.map(x => `<img
+            src="${x}"
+            style="border-radius: 16px; max-height: 320px; max-width: 100%"
+          />`).join('')}
         </div>
       `);
     } else {
