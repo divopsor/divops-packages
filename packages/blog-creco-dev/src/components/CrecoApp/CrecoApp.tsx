@@ -1,5 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { ReactNode } from 'react';
+import { GlobalCss } from './globalCss';
 
 interface CrecoAppProps {
   additionalCss?: string;
@@ -30,3 +31,5 @@ CrecoApp.Heads = function CrecoAppHeads() {
     </>
   );
 };
+
+CrecoApp.GlobalCss = GlobalCss;

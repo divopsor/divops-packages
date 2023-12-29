@@ -1,4 +1,4 @@
-
+export const GlobalCss = `
 /* http://meyerweb.com/eric/tools/css/reset/
    v5.0.1 | 20191019
    License: none (public domain)
@@ -128,3 +128,4 @@ html {
 bold {
   font-weight: bold;
 }
+`;
