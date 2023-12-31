@@ -76,17 +76,19 @@ h3 {
   font-size: 2.4rem;
   font-weight: bolder;
 }
+
 h4 {
   font-size: 2rem;
   font-weight: bolder;
 }
 
 h5 {
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: bolder;
 }
+
 h6 {
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: bolder;
 }
 
