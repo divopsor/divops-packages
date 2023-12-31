@@ -8,11 +8,14 @@ export function withMD2HTML(markdown?: string) {
       const subscript = words[0] === '>' ? null : words[0].slice(1, words[0].length - 1);
       const others = line.replace(new RegExp(`^>${subscript}>`), '').trim();
 
-      resultLines.push(`
-        <div style="border-left: 4px solid #c8c8c8; text-indent: 8px; background: rgba(0,0,0,0.2); padding: 15px;">
-${subscript == null ? '' : `<span style="display: block; font-size: 12px; text-indent: 0;">${subscript}</span>`}
-<span>${others}</span></div>
-      `);
+      resultLines.push(
+        [
+          '<div style="border-left: 4px solid #c8c8c8; text-indent: 8px; background: rgba(0,0,0,0.2); padding: 15px;">',
+          subscript == null ? '' : `<span style="display: block; font-size: 12px; text-indent: 0;">${subscript}</span>`,
+          `<span>${others}</span>`,
+          '</div>',
+        ].join(''),
+      );
     } else if (words[0].startsWith('#')) {
       const [heading, ...text] = line.split(' ');
       const size = heading.split('#').length - 1;
