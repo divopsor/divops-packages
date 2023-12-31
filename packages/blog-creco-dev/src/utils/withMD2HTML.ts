@@ -52,7 +52,7 @@ export function withMD2HTML(markdown?: string) {
       }
 
       resultLines.push(
-        `<span>${line.trim()}</span>`,
+        `<p>${line.trim()}</p>`,
       );
     }
   }
