@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.31](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.30...@divops-packages/blog-creco-dev@0.4.31) (2023-12-31)
+
+
+### Bug Fixes
+
+* h5, h6 스타일 수정 ([2a5e440](https://github.com/divopsor/divops-packages/commit/2a5e440dee0cc5c43230a9ade47c32c78a3436af))
+
+
+
+
+
 ## [0.4.30](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.29...@divops-packages/blog-creco-dev@0.4.30) (2023-12-31)
 
 **Note:** Version bump only for package @divops-packages/blog-creco-dev
