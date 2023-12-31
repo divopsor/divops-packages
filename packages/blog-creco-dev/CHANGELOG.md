@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.28](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.27...@divops-packages/blog-creco-dev@0.4.28) (2023-12-31)
+
+
+### Bug Fixes
+
+* no use span, use p tag ([1739bfc](https://github.com/divopsor/divops-packages/commit/1739bfce23d6fd012913f9d60b2494a59eb1fb55))
+
+
+
+
+
 ## [0.4.27](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.26...@divops-packages/blog-creco-dev@0.4.27) (2023-12-31)
 
 **Note:** Version bump only for package @divops-packages/blog-creco-dev
