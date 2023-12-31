@@ -4,7 +4,10 @@ export function withMD2HTML(markdown?: string) {
 
   for (let line of lines) {
     const words = line.split(' ');
-    if (words[0].startsWith('>') && words[0].endsWith('>')) {
+
+    if (line.trim() === '') {
+      resultLines.push('<br />');
+    } else if (words[0].startsWith('>') && words[0].endsWith('>')) {
       const subscript = words[0] === '>' ? null : words[0].slice(1, words[0].length - 1);
       const others = line.replace(new RegExp(`^>${subscript}>`), '').trim();
 
