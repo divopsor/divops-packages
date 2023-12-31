@@ -2,7 +2,7 @@ export function withMD2HTML(markdown?: string) {
   const lines = markdown?.split('\n') ?? [];
   const resultLines: string[] = [];
 
-  for (let line of lines) {
+  for (const line of lines) {
     const words = line.split(' ');
 
     if (line.trim() === '') {
@@ -39,25 +39,32 @@ export function withMD2HTML(markdown?: string) {
         </div>
       `);
     } else {
-      // eslint-disable-next-line no-useless-escape
-      const linkPattern = /!?\[([^\]]*)\]\(([^\)]+)\)/gm;
-      const linkMatches = [...line.matchAll(linkPattern) as any];
-
-      for (const match of linkMatches) {
-        line = line.replace(match[0], `<a style="color: skyblue" href="${match[2]}" target="_blank">${match[1]}</a>`);
-      }
-
-      const boldPattern = /\*\*(.*?)\*\*/gm;
-      const boldMatched = [...line.matchAll(boldPattern) as any];
-
-      for (const match of boldMatched) {
-        line = line.replace(match[0], `<bold>${match[1]}</bold>`);
-      }
-
-      resultLines.push(
-        `<p>${line.trim()}</p>`,
-      );
+      resultLines.push(line);
     }
+  }
+
+  for (let i = 0; i < resultLines.length; i++) {
+    let line = resultLines[i];
+
+    if (line === '<br />') {
+      continue;
+    }
+    // eslint-disable-next-line no-useless-escape
+    const linkPattern = /!?\[([^\]]*)\]\(([^\)]+)\)/gm;
+    const linkMatches = [...line.matchAll(linkPattern) as any];
+
+    for (const match of linkMatches) {
+      line = line.replace(match[0], `<a style="color: skyblue" href="${match[2]}" target="_blank">${match[1]}</a>`);
+    }
+
+    const boldPattern = /\*\*(.*?)\*\*/gm;
+    const boldMatched = [...line.matchAll(boldPattern) as any];
+
+    for (const match of boldMatched) {
+      line = line.replace(match[0], `<bold>${match[1]}</bold>`);
+    }
+
+    resultLines[i] = `<p>${line.trim()}</p>`;
   }
 
   return resultLines.filter(x => x !== '').join('\n');
