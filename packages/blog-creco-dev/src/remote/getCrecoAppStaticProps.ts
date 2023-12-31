@@ -11,12 +11,12 @@ export async function getCrecoAppStaticProps(context: { params?: any }, {
 }) {
   const { params } = context;
 
-  if (params?.id == null) {
-    return { props: {} };
-  }
-
   const posts = await fetchListBuildtime({ baseURL, prefix, category });
-  const target = posts.items.find((post: any) => post.id === params!.id)!;
+  const target = posts.items.find((post: any) => post.id === params.id)!;
+
+  if (target == null) {
+    return { props: { post: { id: params.id } } };
+  }
 
   return { props: { post: target } };
 }
