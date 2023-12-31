@@ -19,6 +19,9 @@ export function withMD2HTML(markdown?: string) {
           '</div>',
         ].join(''),
       );
+    } else if (words[0] === '-') {
+      const [, ...text] = words;
+      resultLines.push(`<li><span>${text.join(' ')}</span></li>`);
     } else if (words[0].startsWith('#')) {
       const [heading, ...text] = words;
       const size = heading.split('#').length - 1;
