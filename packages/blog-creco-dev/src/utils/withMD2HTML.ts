@@ -48,9 +48,11 @@ export function withMD2HTML(markdown?: string) {
         line = line.replace(match[0], `<bold>${match[1]}</bold>`);
       }
 
-      resultLines.push(line);
+      resultLines.push(
+        `<span>${line}</span>`,
+      );
     }
   }
 
-  return resultLines.join('<br/>');
+  return resultLines.join('<br />');
 }
