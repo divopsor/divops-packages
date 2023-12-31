@@ -27,7 +27,7 @@ CrecoApp.Heads = function CrecoAppHeads() {
   return (
     <>
       <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0, viewport-fit=cover" name="viewport" />
-      <link rel="shortcut icon" type="image/x-icon" href="/post/favicon.ico" />
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
     </>
   );
 };

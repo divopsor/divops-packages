@@ -9,11 +9,11 @@ export async function getCrecoAppStaticPaths({
   prefix?: string;
   category: string;
 }) {
-  const posts = await fetchListBuildtime({ baseURL, prefix, category });
-  const paths = posts.items
-    .filter((post: any) => post.id != null)
-    .map((post: any) => {
-      return { params: { id: post.id } };
+  const list = await fetchListBuildtime({ baseURL, prefix, category });
+  const paths = list.items
+    .filter((item: any) => item.id != null)
+    .map((item: any) => {
+      return { params: { id: item.id } };
     });
 
   return {

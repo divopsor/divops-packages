@@ -15,9 +15,9 @@ export async function fetchListBuildtime({
     return cache.get(url);
   }
 
-  const { data: posts } = await fetch(url).then((res) => res.json());
+  const { data: list } = await fetch(url).then((res) => res.json());
 
-  cache.set(url, posts);
+  cache.set(url, list);
 
-  return posts;
+  return list;
 }
