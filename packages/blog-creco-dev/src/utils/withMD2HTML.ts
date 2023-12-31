@@ -17,10 +17,10 @@ export function withMD2HTML(markdown?: string) {
         ].join(''),
       );
     } else if (words[0].startsWith('#')) {
-      const [heading, ...text] = line.split(' ');
+      const [heading, ...text] = words;
       const size = heading.split('#').length - 1;
-      line = `<h${size}>${text.join(' ')}</h${size}>`;
-      resultLines.push(line);
+      const thisLine = `<h${size}>${text.join(' ').trim()}</h${size}>`;
+      resultLines.push(thisLine);
     } else if (line.startsWith('https://') && line.endsWith('.jpg')) {
       const images = line.split(',');
 
@@ -49,7 +49,7 @@ export function withMD2HTML(markdown?: string) {
       }
 
       resultLines.push(
-        `<span>${line}</span>`,
+        `<span>${line.trim()}</span>`,
       );
     }
   }
