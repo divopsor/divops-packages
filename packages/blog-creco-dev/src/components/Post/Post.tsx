@@ -1,12 +1,12 @@
 import { HTMLAttributes } from 'react';
 
-export const Post = (props: HTMLAttributes<HTMLDivElement>) => {
+export const Post = ({ className, ...props }: HTMLAttributes<HTMLDivElement>) => {
   return (
     <div
       {...props}
+      className={className}
       style={{
         fontSize: '1.6rem',
-        whiteSpace: 'pre-wrap',
         wordBreak: 'keep-all',
         ...props.style,
       }}
