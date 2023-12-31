@@ -57,5 +57,5 @@ export function withMD2HTML(markdown?: string) {
     }
   }
 
-  return resultLines.join('<br />');
+  return resultLines.filter(x => x !== '').join('\n');
 }
