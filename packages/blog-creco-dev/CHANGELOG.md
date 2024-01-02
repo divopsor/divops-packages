@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.34](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.33...@divops-packages/blog-creco-dev@0.4.34) (2024-01-02)
+
+
+### Bug Fixes
+
+* p text-align justify ([9303732](https://github.com/divopsor/divops-packages/commit/9303732da2c5a2e74186b395eb46e0a3fcb2c7ec))
+
+
+
+
+
 ## [0.4.33](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.32...@divops-packages/blog-creco-dev@0.4.33) (2023-12-31)
 
 **Note:** Version bump only for package @divops-packages/blog-creco-dev
