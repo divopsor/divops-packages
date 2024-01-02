@@ -63,7 +63,7 @@ export function withMD2HTML(markdown?: string) {
     for (const match of boldMatched) {
       line = line.replace(match[0], `<bold>${match[1]}</bold>`);
     }
-    const isIndented = line[0] === '' && line[1] !== '';
+    const isIndented = line[0] === ' ' && line[1] !== '';
     resultLines[i] = `<p style="${isIndented ? 'text-indent: 1.4rem; ' : ''}text-align: justify; word-break: break-word;">${line.trim()}</p>`;
   }
 
