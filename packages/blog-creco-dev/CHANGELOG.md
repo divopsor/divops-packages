@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [0.4.35](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.34...@divops-packages/blog-creco-dev@0.4.35) (2024-01-02)
+
+
+### Bug Fixes
+
+* p text-indent 1.4 rem ([edc3199](https://github.com/divopsor/divops-packages/commit/edc3199b1f9766cbaaf30d906c46cd2c604cda9d))
+
+
+
+
+
 ## [0.4.34](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.33...@divops-packages/blog-creco-dev@0.4.34) (2024-01-02)
 
 
