@@ -64,7 +64,7 @@ export function withMD2HTML(markdown?: string) {
       line = line.replace(match[0], `<bold>${match[1]}</bold>`);
     }
 
-    resultLines[i] = `<p style="text-indent: 8px; text-align: justify;">${line.trim()}</p>`;
+    resultLines[i] = `<p style="text-indent: 1.4rem; text-align: justify;">${line.trim()}</p>`;
   }
 
   return resultLines.filter(x => x !== '').join('\n');
