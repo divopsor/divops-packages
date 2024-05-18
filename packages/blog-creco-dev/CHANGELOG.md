@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [0.5.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.39...@divops-packages/blog-creco-dev@0.5.0) (2024-05-18)
+
+
+### Features
+
+* **blog-creco-dev:** 공통 컴포넌트 추가 ([fc58b9c](https://github.com/divopsor/divops-packages/commit/fc58b9cf7f112b59e8a714137166ab073cba7130))
+
+
+
+
+
 ## [0.4.39](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.38...@divops-packages/blog-creco-dev@0.4.39) (2024-01-02)
 
 **Note:** Version bump only for package @divops-packages/blog-creco-dev
