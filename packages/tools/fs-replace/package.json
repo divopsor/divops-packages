@@ -1,6 +1,6 @@
 {
   "name": "fs-replace",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "bin": "./bin/internal.js",
   "exports": {
     "./package.json": "./package.json"
