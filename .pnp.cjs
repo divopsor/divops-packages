@@ -32,6 +32,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         "reference": "workspace:packages/node-utils"\
       },\
       {\
+        "name": "fs-replace",\
+        "reference": "workspace:packages/tools/fs-replace"\
+      },\
+      {\
         "name": "init-berry",\
         "reference": "workspace:packages/tools/init-berry"\
       },\
@@ -49,6 +53,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
       ["@divops-packages/node-utils", ["workspace:packages/node-utils"]],\
       ["@divops-packages/ui", ["workspace:packages/ui"]],\
       ["divops-packages", ["workspace:."]],\
+      ["fs-replace", ["workspace:packages/tools/fs-replace"]],\
       ["init-berry", ["workspace:packages/tools/init-berry"]]\
     ],\
     "fallbackPool": [\
@@ -6649,10 +6654,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "SOFT"\
         }],\
-        ["virtual:d0dcd34edaf4a61510fb878817e7583db5777c45a01fe5cf6a82ad5b1a9bbe8bfc2fa65d8deea0dde1e6a4b7c0ff16dabd107fa7c317aa29b3886da91eab1df4#npm:3.2.1", {\
-          "packageLocation": "./.yarn/__virtual__/clipanion-virtual-a441dc037d/0/cache/clipanion-npm-3.2.1-fc9187f56c-448efd122e.zip/node_modules/clipanion/",\
+        ["virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:3.2.1", {\
+          "packageLocation": "./.yarn/__virtual__/clipanion-virtual-65e1ca547b/0/cache/clipanion-npm-3.2.1-fc9187f56c-448efd122e.zip/node_modules/clipanion/",\
           "packageDependencies": [\
-            ["clipanion", "virtual:d0dcd34edaf4a61510fb878817e7583db5777c45a01fe5cf6a82ad5b1a9bbe8bfc2fa65d8deea0dde1e6a4b7c0ff16dabd107fa7c317aa29b3886da91eab1df4#npm:3.2.1"],\
+            ["clipanion", "virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:3.2.1"],\
             ["@types/typanion", null],\
             ["typanion", "npm:3.12.1"]\
           ],\
@@ -8995,6 +9000,32 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["fs-replace", [\
+        ["workspace:packages/tools/fs-replace", {\
+          "packageLocation": "./packages/tools/fs-replace/",\
+          "packageDependencies": [\
+            ["fs-replace", "workspace:packages/tools/fs-replace"],\
+            ["@babel/core", "npm:7.22.5"],\
+            ["@babel/preset-env", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:7.22.5"],\
+            ["@babel/preset-typescript", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:7.22.5"],\
+            ["@types/fs-extra", "npm:11.0.1"],\
+            ["@types/jest", "npm:28.1.8"],\
+            ["@types/node", "npm:20.3.1"],\
+            ["babel-jest", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:28.1.3"],\
+            ["clipanion", "virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:3.2.1"],\
+            ["eslint", "npm:8.43.0"],\
+            ["eslint-import-resolver-typescript", "virtual:19c5b4b6dfffbab1bde6b8e6558aaaec9b6b3e210f63044b3b3edcf605a1cd5e411985eee3fd95876a912ecff764814310d6094bcae82757c17f2c1a4411142a#npm:3.5.0"],\
+            ["eslint-plugin-import", "virtual:19c5b4b6dfffbab1bde6b8e6558aaaec9b6b3e210f63044b3b3edcf605a1cd5e411985eee3fd95876a912ecff764814310d6094bcae82757c17f2c1a4411142a#npm:2.26.0"],\
+            ["fs-extra", "npm:11.1.1"],\
+            ["jest", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:28.1.3"],\
+            ["prettier", "npm:2.8.8"],\
+            ["ts-node", "virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:10.9.1"],\
+            ["tsup", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:7.0.0"],\
+            ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
+          ],\
+          "linkType": "SOFT"\
+        }]\
+      ]],\
       ["fs.realpath", [\
         ["npm:1.0.0", {\
           "packageLocation": "./.yarn/cache/fs.realpath-npm-1.0.0-c8f05d8126-99ddea01a7.zip/node_modules/fs.realpath/",\
@@ -9807,7 +9838,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["@types/jest", "npm:28.1.8"],\
             ["@types/node", "npm:20.3.1"],\
             ["babel-jest", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:28.1.3"],\
-            ["clipanion", "virtual:d0dcd34edaf4a61510fb878817e7583db5777c45a01fe5cf6a82ad5b1a9bbe8bfc2fa65d8deea0dde1e6a4b7c0ff16dabd107fa7c317aa29b3886da91eab1df4#npm:3.2.1"],\
+            ["clipanion", "virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:3.2.1"],\
             ["eslint", "npm:8.43.0"],\
             ["eslint-import-resolver-typescript", "virtual:19c5b4b6dfffbab1bde6b8e6558aaaec9b6b3e210f63044b3b3edcf605a1cd5e411985eee3fd95876a912ecff764814310d6094bcae82757c17f2c1a4411142a#npm:3.5.0"],\
             ["eslint-plugin-import", "virtual:19c5b4b6dfffbab1bde6b8e6558aaaec9b6b3e210f63044b3b3edcf605a1cd5e411985eee3fd95876a912ecff764814310d6094bcae82757c17f2c1a4411142a#npm:2.26.0"],\
@@ -9815,7 +9846,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["fs-extra", "npm:11.1.1"],\
             ["jest", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:28.1.3"],\
             ["prettier", "npm:2.8.8"],\
-            ["ts-node", "virtual:d0dcd34edaf4a61510fb878817e7583db5777c45a01fe5cf6a82ad5b1a9bbe8bfc2fa65d8deea0dde1e6a4b7c0ff16dabd107fa7c317aa29b3886da91eab1df4#npm:10.9.1"],\
+            ["ts-node", "virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:10.9.1"],\
             ["tsup", "virtual:6e49f83d26eab00cddfea70350d0e4cae4bd1da49e5e276bda6db0f753d552147279468d254188a7c727390957330a98cd8ecdc0bdb3092ad59a37b6004d843f#npm:7.0.0"],\
             ["typescript", "patch:typescript@npm%3A4.9.5#~builtin<compat/typescript>::version=4.9.5&hash=ad5954"]\
           ],\
@@ -15044,10 +15075,10 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           ],\
           "linkType": "HARD"\
         }],\
-        ["virtual:d0dcd34edaf4a61510fb878817e7583db5777c45a01fe5cf6a82ad5b1a9bbe8bfc2fa65d8deea0dde1e6a4b7c0ff16dabd107fa7c317aa29b3886da91eab1df4#npm:10.9.1", {\
-          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-aad2481c20/0/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
+        ["virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:10.9.1", {\
+          "packageLocation": "./.yarn/__virtual__/ts-node-virtual-32a1838eba/0/cache/ts-node-npm-10.9.1-6c268be7f4-090adff130.zip/node_modules/ts-node/",\
           "packageDependencies": [\
-            ["ts-node", "virtual:d0dcd34edaf4a61510fb878817e7583db5777c45a01fe5cf6a82ad5b1a9bbe8bfc2fa65d8deea0dde1e6a4b7c0ff16dabd107fa7c317aa29b3886da91eab1df4#npm:10.9.1"],\
+            ["ts-node", "virtual:7765fdfb7fb8572edbdbd589a53f35026fe8a72d920d7d1b30e88a88510dfe9bca2be51f7eff39ee1cd0080c22a547d9849dc4d81e10e7058c52c962893f1a71#npm:10.9.1"],\
             ["@cspotcode/source-map-support", "npm:0.8.1"],\
             ["@swc/core", null],\
             ["@swc/wasm", null],\
