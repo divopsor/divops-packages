@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.5.1 (2024-08-31)
+
+
+### Bug Fixes
+
+* prefix ([45bcd48](https://github.com/divopsor/divops-packages/commit/45bcd481e471c21f84cd690cc429e757b03282ad))
+
+
+
+
+
 # [0.5.0](https://github.com/divopsor/divops-packages/compare/@divops-packages/blog-creco-dev@0.4.39...@divops-packages/blog-creco-dev@0.5.0) (2024-05-18)
 
 
