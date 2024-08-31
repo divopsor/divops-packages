@@ -7,7 +7,7 @@ async function get(url: string) {
 }
 
 export const GistAPI = {
-  of: ({ category, prefix = '/github-api/gist' }: { category: string; prefix?: string }) => ({
+  of: ({ category, prefix = '/github-api/api/gist' }: { category: string; prefix?: string }) => ({
     readList: async () => {
       if (category == null || category === '' || category === 'undefined') {
         return [];
